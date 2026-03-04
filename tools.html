@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppHub - Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo.svg" class="logo">
+                    <span class="brand-text">AppHub</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Clean Home</a></li>
+                                <li><a class="dropdown-item" href="home2.html">Hype Home</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="education.html">Education Apps</a></li>
+                                <li><a class="dropdown-item" href="information.html">Information Apps</a></li>
+                                <li><a class="dropdown-item" href="entertainment.html">Entertainment Apps</a></li>
+                                <li><a class="dropdown-item" href="tools.html">Tools</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <button id="themeToggle" class="icon-btn"><i class="bi bi-moon"></i></button>
+                        <a href="auth.html" class="login-btn">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-section text-center py-5 d-flex align-items-center" style="min-height: 250px;">
+        <div class="container">
+            <h1 class="mb-3">Tool Apps</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                A curated selection of utilities and productive applications to get things done efficiently and
+                securely.
+            </p>
+        </div>
+    </section>
+
+    <!-- APP GRID -->
+    <section class="apps-section py-4 mb-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
+                        <img src="https://picsum.photos/100/131" class="rounded-3 me-3"
+                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">Zip Manager</h6>
+                            <p class="text-muted small mb-1" style="line-height: 1.2;">File compression tool</p>
+                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.5</p>
+                        </div>
+                        <button class="install-btn ms-2">View</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
+                        <img src="https://picsum.photos/100/132" class="rounded-3 me-3"
+                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">Secure VPN</h6>
+                            <p class="text-muted small mb-1" style="line-height: 1.2;">Private internet access</p>
+                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.9</p>
+                        </div>
+                        <button class="install-btn ms-2">View</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
+                        <img src="https://picsum.photos/100/133" class="rounded-3 me-3"
+                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">Note Taker</h6>
+                            <p class="text-muted small mb-1" style="line-height: 1.2;">Advanced task notes</p>
+                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.7</p>
+                        </div>
+                        <button class="install-btn ms-2">View</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
+                        <img src="https://picsum.photos/100/134" class="rounded-3 me-3"
+                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">PDF Converter</h6>
+                            <p class="text-muted small mb-1" style="line-height: 1.2;">Scan & save documents</p>
+                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.8</p>
+                        </div>
+                        <button class="install-btn ms-2">View</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
+                        <img src="https://picsum.photos/100/135" class="rounded-3 me-3"
+                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">Battery Saver</h6>
+                            <p class="text-muted small mb-1" style="line-height: 1.2;">Optimize device life</p>
+                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.4</p>
+                        </div>
+                        <button class="install-btn ms-2">View</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
+                        <img src="https://picsum.photos/100/136" class="rounded-3 me-3"
+                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">Network Tools</h6>
+                            <p class="text-muted small mb-1" style="line-height: 1.2;">Measure connection</p>
+                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.6</p>
+                        </div>
+                        <button class="install-btn ms-2">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="index.html" class="footer-brand d-flex align-items-center mb-3"
+                        style="text-decoration: none; color: white;">
+                        <img src="assets/images/logo.svg" class="logo">
+                        <span class="brand-text">AppHub</span>
+                    </a>
+                    <p>
+                        Discover and explore the best apps
+                        for education, productivity and entertainment.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Services</h6>
+                    <ul>
+                        <li><a href="education.html">Education Apps</a></li>
+                        <li><a href="information.html">Information Apps</a></li>
+                        <li><a href="entertainment.html">Entertainment Apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Newsletter</h6>
+                    <input type="email" placeholder="Your Email" class="newsletter-input">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 AppHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- MOBILE BOTTOM NAV -->
+    <div class="mobile-nav">
+        <a href="index.html"><i class="bi bi-house"></i><span>Home</span></a>
+        <a href="education.html"><i class="bi bi-grid"></i><span>Services</span></a>
+        <a href="#"><i class="bi bi-stars"></i><span>Apps</span></a>
+        <a href="blogs.html"><i class="bi bi-newspaper"></i><span>Blogs</span></a>
+        <a href="auth.html"><i class="bi bi-person"></i><span>Account</span></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
