@@ -54,96 +54,321 @@
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="hero-section text-center py-5 d-flex align-items-center" style="min-height: 250px;">
-        <div class="container">
-            <h1 class="mb-3">Tool Apps</h1>
-            <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                A curated selection of utilities and productive applications to get things done efficiently and
-                securely.
-            </p>
-        </div>
-    </section>
+    <main>
 
-    <!-- APP GRID -->
-    <section class="apps-section py-4 mb-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/131" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Zip Manager</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">File compression tool</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.5</p>
-                        </div>
-                        <button class="install-btn ms-2">View</button>
-                    </div>
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section text-center position-relative overflow-hidden d-flex align-items-center"
+            style="min-height: 350px; background: linear-gradient(135deg, rgba(41, 128, 185, 0.08) 0%, rgba(44, 62, 80, 0.08) 100%);">
+            <!-- Geometric Accents -->
+            <div class="position-absolute top-0 start-0 mt-4 ms-4" style="opacity: 0.1;">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="var(--primary)" stroke-width="2" fill="none" />
+                </svg>
+            </div>
+            <div class="position-absolute bottom-0 end-0 mb-4 me-4" style="opacity: 0.1;">
+                <svg width="120" height="120" viewBox="0 0 100 100">
+                    <rect x="10" y="10" width="80" height="80" stroke="var(--info)" stroke-width="2" fill="none"
+                        transform="rotate(45 50 50)" />
+                </svg>
+            </div>
+
+            <div class="container py-5 position-relative z-1 fade-in-up">
+                <span class="badge bg-primary text-white rounded-pill px-3 py-2 mb-3 shadow-sm"><i
+                        class="bi bi-cpu me-1"></i> Maximize Efficiency</span>
+                <h1 class="display-3 fw-bold mb-3 text-dark">Essential Tools</h1>
+                <p class="lead text-muted mx-auto" style="max-width: 650px; font-size: 1.25rem;">
+                    Boost your productivity with our curated selection of powerful utilities, from system optimization
+                    to advanced security.
+                </p>
+                <div class="mt-4">
+                    <button class="btn primary-btn btn-lg px-4 me-2 rounded-pill hover-lift shadow-sm">Explore
+                        Tools</button>
+                    <button
+                        class="btn btn-outline-secondary btn-lg px-4 rounded-pill hover-lift text-dark bg-white shadow-sm border-0"><i
+                            class="bi bi-search me-1"></i> Search</button>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/132" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Secure VPN</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Private internet access</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.9</p>
+            </div>
+        </section>
+
+        <!-- 2. HIGH-PERFORMANCE UTILITIES -->
+        <section class="apps-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4 text-start fw-bold">High-Performance Utilities</h2>
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div
+                            class="app-card border-0 shadow-sm p-4 hover-lift h-100 bg-body rounded-4 position-relative overflow-hidden">
+                            <div class="position-absolute top-0 end-0 p-3"><i
+                                    class="bi bi-shield-lock text-success opacity-25" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://picsum.photos/100/100?tool1" class="rounded-3 shadow-sm me-3"
+                                    style="width: 70px; height: 70px; object-fit: cover;">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Defense Pro VPN</h5>
+                                    <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.9 <span
+                                            class="text-muted ms-1">(12K Reviews)</span></div>
+                                </div>
+                            </div>
+                            <p class="text-muted mb-4 position-relative z-1">Enterprise-grade encryption and ultra-fast
+                                servers worldwide. Ensure your digital footprint remains secure and anonymous on any
+                                network.</p>
+                            <button
+                                class="btn btn-outline-success px-4 rounded-pill fw-medium hover-lift z-1 position-relative">Download</button>
                         </div>
-                        <button class="install-btn ms-2">View</button>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/133" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Note Taker</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Advanced task notes</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.7</p>
+                    <div class="col-lg-6">
+                        <div class="row g-3 h-100">
+                            <div class="col-12">
+                                <div
+                                    class="app-card d-flex align-items-center p-3 shadow-sm border-0 hover-lift bg-body rounded-4 h-100">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-3 d-flex align-items-center justify-content-center me-3"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="bi bi-file-earmark-zip fs-3"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">Archive Master</h6>
+                                        <p class="text-muted small mb-0">Compress & extract seamlessly</p>
+                                    </div>
+                                    <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div
+                                    class="app-card d-flex align-items-center p-3 shadow-sm border-0 hover-lift bg-body rounded-4 h-100">
+                                    <div class="bg-info bg-opacity-10 text-info rounded-3 d-flex align-items-center justify-content-center me-3"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="bi bi-battery-charging fs-3"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">Battery Optimizer</h6>
+                                        <p class="text-muted small mb-0">Extend battery life instantly</p>
+                                    </div>
+                                    <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                                </div>
+                            </div>
                         </div>
-                        <button class="install-btn ms-2">View</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/134" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">PDF Converter</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Scan & save documents</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.8</p>
-                        </div>
-                        <button class="install-btn ms-2">View</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/135" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Battery Saver</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Optimize device life</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.4</p>
-                        </div>
-                        <button class="install-btn ms-2">View</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/136" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Network Tools</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Measure connection</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.6</p>
-                        </div>
-                        <button class="install-btn ms-2">View</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- 3. TOP RATED TOOLS -->
+        <section
+            class="apps-section py-5 bg-light rounded-4 mx-3 mb-5 pattern-diagonal-lines-sm text-dark bg-opacity-50">
+            <div class="container py-2">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h3 class="fw-bold mb-0">Top Rated Tools</h3>
+                    <a href="#" class="text-decoration-none fw-bold">View All <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="horizontal-scroll px-1 pb-3">
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm me-3 p-3 bg-white rounded-4 text-center"
+                        style="width: 140px;">
+                        <img src="https://picsum.photos/100/100?tool2" class="rounded-circle mb-2"
+                            style="width: 60px; height: 60px; object-fit: cover;">
+                        <h6 class="fw-bold mb-0 text-truncate font-monospace small">DataSync</h6>
+                        <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.8</div>
+                        <span class="badge bg-light text-dark border w-100">Cloud</span>
+                    </div>
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm me-3 p-3 bg-white rounded-4 text-center"
+                        style="width: 140px;">
+                        <img src="https://picsum.photos/100/100?tool3" class="rounded-circle mb-2"
+                            style="width: 60px; height: 60px; object-fit: cover;">
+                        <h6 class="fw-bold mb-0 text-truncate font-monospace small">NotePad+</h6>
+                        <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.9</div>
+                        <span class="badge bg-light text-dark border w-100">Writing</span>
+                    </div>
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm me-3 p-3 bg-white rounded-4 text-center"
+                        style="width: 140px;">
+                        <img src="https://picsum.photos/100/100?tool4" class="rounded-circle mb-2"
+                            style="width: 60px; height: 60px; object-fit: cover;">
+                        <h6 class="fw-bold mb-0 text-truncate font-monospace small">ScanX</h6>
+                        <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.7</div>
+                        <span class="badge bg-light text-dark border w-100">Scanner</span>
+                    </div>
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm me-3 p-3 bg-white rounded-4 text-center"
+                        style="width: 140px;">
+                        <img src="https://picsum.photos/100/100?tool5" class="rounded-circle mb-2"
+                            style="width: 60px; height: 60px; object-fit: cover;">
+                        <h6 class="fw-bold mb-0 text-truncate font-monospace small">SysClean</h6>
+                        <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.6</div>
+                        <span class="badge bg-light text-dark border w-100">System</span>
+                    </div>
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm me-3 p-3 bg-white rounded-4 text-center"
+                        style="width: 140px;">
+                        <img src="https://picsum.photos/100/100?tool6" class="rounded-circle mb-2"
+                            style="width: 60px; height: 60px; object-fit: cover;">
+                        <h6 class="fw-bold mb-0 text-truncate font-monospace small">WifiMap</h6>
+                        <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.8</div>
+                        <span class="badge bg-light text-dark border w-100">Network</span>
+                    </div>
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm me-3 p-3 bg-white rounded-4 text-center"
+                        style="width: 140px;">
+                        <img src="https://picsum.photos/100/100?tool7" class="rounded-circle mb-2"
+                            style="width: 60px; height: 60px; object-fit: cover;">
+                        <h6 class="fw-bold mb-0 text-truncate font-monospace small">PassVault</h6>
+                        <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.9</div>
+                        <span class="badge bg-light text-dark border w-100">Security</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TOOL COLLECTIONS -->
+        <section class="apps-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-5 text-center fw-bold">Tool Collections</h2>
+                <div class="row text-center g-4">
+                    <div class="col-md-3 col-6">
+                        <div
+                            class="p-4 rounded-4 shadow-sm bg-body hover-lift border d-flex flex-column align-items-center h-100">
+                            <div class="rounded-circle bg-primary bg-opacity-10 d-flex justify-content-center align-items-center mb-3"
+                                style="width: 70px; height: 70px;">
+                                <i class="bi bi-shield-check fs-2 text-primary"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Security</h5>
+                            <p class="small text-muted mb-0">Antivirus, VPNs, and Password Managers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div
+                            class="p-4 rounded-4 shadow-sm bg-body hover-lift border d-flex flex-column align-items-center h-100">
+                            <div class="rounded-circle bg-warning bg-opacity-10 d-flex justify-content-center align-items-center mb-3"
+                                style="width: 70px; height: 70px;">
+                                <i class="bi bi-lightning-charge fs-2 text-warning"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Optimization</h5>
+                            <p class="small text-muted mb-0">Cleaners, Battery Savers, and Boosters.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div
+                            class="p-4 rounded-4 shadow-sm bg-body hover-lift border d-flex flex-column align-items-center h-100">
+                            <div class="rounded-circle bg-info bg-opacity-10 d-flex justify-content-center align-items-center mb-3"
+                                style="width: 70px; height: 70px;">
+                                <i class="bi bi-folder-check fs-2 text-info"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Productivity</h5>
+                            <p class="small text-muted mb-0">Office suites, Scanners, and Note-taking.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div
+                            class="p-4 rounded-4 shadow-sm bg-body hover-lift border d-flex flex-column align-items-center h-100">
+                            <div class="rounded-circle bg-success bg-opacity-10 d-flex justify-content-center align-items-center mb-3"
+                                style="width: 70px; height: 70px;">
+                                <i class="bi bi-wifi fs-2 text-success"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Network</h5>
+                            <p class="small text-muted mb-0">Analyzers, Speed Tests, and Routers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. EDITOR'S SPOTLIGHT -->
+        <section class="apps-section py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <img src="https://picsum.photos/600/700?device" class="img-fluid rounded-4 shadow-lg hover-lift"
+                            alt="Editor Spotlight App">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-inline-block badge bg-dark text-white rounded-pill px-3 py-2 mb-3"><i
+                                class="bi bi-award me-1"></i> Editor's Spotlight</div>
+                        <h2 class="display-5 fw-bold mb-3">System Mechanic Pro</h2>
+                        <h5 class="text-primary mb-4">The ultimate device management suite.</h5>
+                        <p class="lead text-muted mb-4">
+                            Keep your device running like new with our top-rated optimization tool. Automatically clean
+                            junk files, freeze background apps, and protect against malware all from one single
+                            dashboard.
+                        </p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>One-tap
+                                        optimization</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Deep
+                                        storage cleaning</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Real-time
+                                        protection</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Battery
+                                        analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn primary-btn btn-lg px-5 rounded-pill shadow-sm">Get App</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PLATFORM STANDARDS -->
+        <section class="apps-section py-5 bg-body border-top border-bottom">
+            <div class="container">
+                <div class="row text-center g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <i class="bi bi-shield-check display-4 text-muted mb-3 d-block"></i>
+                        <h5 class="fw-bold">Virus Free</h5>
+                        <p class="text-muted small mx-auto" style="max-width: 250px;">Every utility is rigorously
+                            scanned by multiple antivirus engines.</p>
+                    </div>
+                    <div class="col-md-4 border-start border-end d-none d-md-block">
+                        <i class="bi bi-cloud-arrow-down display-4 text-muted mb-3 d-block"></i>
+                        <h5 class="fw-bold">Fast Downloads</h5>
+                        <p class="text-muted small mx-auto" style="max-width: 250px;">Distributed global servers ensure
+                            you get your tools in seconds.</p>
+                    </div>
+                    <div class="col-md-4 d-md-none">
+                        <i class="bi bi-cloud-arrow-down display-4 text-muted mb-3 d-block"></i>
+                        <h5 class="fw-bold">Fast Downloads</h5>
+                        <p class="text-muted small mx-auto" style="max-width: 250px;">Distributed global servers ensure
+                            you get your tools in seconds.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi bi-arrow-repeat display-4 text-muted mb-3 d-block"></i>
+                        <h5 class="fw-bold">Regular Updates</h5>
+                        <p class="text-muted small mx-auto" style="max-width: 250px;">Apps are constantly updated to
+                            support the latest software architectures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CTA -->
+        <section class="apps-section py-5 mb-5">
+            <div class="container">
+                <div class="bg-dark rounded-5 p-5 text-center shadow-lg position-relative overflow-hidden hover-lift"
+                    style="background-image: radial-gradient(circle at 100% 100%, #2c3e50 0%, #1a1a1a 100%);">
+                    <div class="position-relative z-1">
+                        <h2 class="display-5 fw-bold mb-3 text-white">Equip Your Device Today</h2>
+                        <p class="text-light opacity-75 mb-4 mx-auto" style="max-width: 500px;">Join millions of users
+                            who trust our utility selection for optimizing and protecting their devices.</p>
+                        <button
+                            class="btn btn-primary btn-lg fw-bold px-5 rounded-pill shadow-sm hover-lift border-0">Browse
+                            All Tools <i class="bi bi-gear-fill ms-2"></i></button>
+                    </div>
+                    <!-- Decorative abstract shapes inside CTA -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100"
+                        style="opacity: 0.05; pointer-events: none;">
+                        <svg width="100%" height="100%">
+                            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1" />
+                            </pattern>
+                            <rect width="100%" height="100%" fill="url(#grid)" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- FOOTER -->
     <footer class="main-footer">

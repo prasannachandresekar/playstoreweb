@@ -54,96 +54,350 @@
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="hero-section text-center py-5 d-flex align-items-center" style="min-height: 250px;">
-        <div class="container">
-            <h1 class="mb-3">Information Apps</h1>
-            <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                Stay informed with top-rated apps that deliver news, reference materials, and useful facts right to your
-                device.
-            </p>
-        </div>
-    </section>
+    <main>
 
-    <!-- APP GRID -->
-    <section class="apps-section py-4 mb-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/111" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">News Pulse</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Live global news feeds</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.7</p>
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section text-center py-5 d-flex align-items-center" style="min-height: 250px;">
+            <div class="container fade-in-up">
+                <h1 class="display-4 fw-bold mb-3">Information Apps</h1>
+                <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                    Discover apps that keep you informed and updated.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. FEATURED KNOWLEDGE APPS -->
+        <section class="apps-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4 text-start">Featured Knowledge Apps</h2>
+                <div class="row g-4 align-items-center">
+                    <!-- Left: Large Card -->
+                    <div class="col-lg-7">
+                        <div class="app-card border-0 shadow-lg p-0 hover-lift overflow-hidden h-100 position-relative">
+                            <img src="https://picsum.photos/800/400?news" class="w-100" alt="News Pulse App"
+                                style="height: 300px; object-fit: cover;">
+                            <div class="p-4 bg-body">
+                                <span class="badge bg-danger mb-2">Top Story App</span>
+                                <h3 class="fw-bold mb-2 text-dark">Global News Pulse</h3>
+                                <p class="text-muted mb-3">
+                                    Get the latest breaking news, deep dives into current events, and personalized news
+                                    feeds tailored to your interests in real time.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-half"></i>
+                                        <span class="text-body ms-2 fw-medium">4.8</span>
+                                    </div>
+                                    <button class="btn primary-btn px-4">Download</button>
+                                </div>
+                            </div>
                         </div>
-                        <button class="install-btn ms-2">View</button>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/112" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Wiki Reader</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Quick encyclopedia</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.5</p>
+                    <!-- Right: Stacked Smaller Cards -->
+                    <div class="col-lg-5 d-flex flex-column gap-3">
+                        <div
+                            class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift bg-body">
+                            <img src="https://picsum.photos/100/100?wiki" class="rounded-3 me-3"
+                                style="width: 80px; height: 80px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 text-dark">Wiki Reader Mini</h6>
+                                <p class="text-muted small mb-2 text-truncate" style="max-width: 150px;">Offline
+                                    encyclopedia</p>
+                                <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.5</div>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm ms-2 px-3 rounded-pill">Get</button>
                         </div>
-                        <button class="install-btn ms-2">View</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/113" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Tech Blogs</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">The latest in tech daily</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.9</p>
+                        <div
+                            class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift bg-body">
+                            <img src="https://picsum.photos/100/100?tech" class="rounded-3 me-3"
+                                style="width: 80px; height: 80px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 text-dark">Tech Blogs Daily</h6>
+                                <p class="text-muted small mb-2 text-truncate" style="max-width: 150px;">Curated tech
+                                    articles</p>
+                                <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</div>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm ms-2 px-3 rounded-pill">Get</button>
                         </div>
-                        <button class="install-btn ms-2">View</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/114" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Weather Pro</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Accurate climate data</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.8</p>
+                        <div
+                            class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift bg-body">
+                            <img src="https://picsum.photos/100/100?market" class="rounded-3 me-3"
+                                style="width: 80px; height: 80px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 text-dark">Market Insight</h6>
+                                <p class="text-muted small mb-2 text-truncate" style="max-width: 150px;">Stock & crypto
+                                    analysis</p>
+                                <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.6</div>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm ms-2 px-3 rounded-pill">Get</button>
                         </div>
-                        <button class="install-btn ms-2">View</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/115" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Finance Hub</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Market analysis & stocks</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.6</p>
-                        </div>
-                        <button class="install-btn ms-2">View</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/116" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Health Journal</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Medical tips and news</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.5</p>
-                        </div>
-                        <button class="install-btn ms-2">View</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- 3. TRENDING INFORMATION APPS -->
+        <section class="apps-section py-5" style="background-color: rgba(167, 227, 255, 0.05);">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <h2 class="section-title mb-0 text-start">Trending Information Apps</h2>
+                    <a href="#" class="text-decoration-none fw-bold" style="color: var(--primary);">Full List <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="horizontal-scroll px-1">
+                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3 bg-body">
+                        <img src="https://picsum.photos/300/150?1" class="w-100 rounded-3 mb-3"
+                            style="height: 120px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">Weather Live</h6>
+                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.8</p>
+                        <button class="install-btn w-100">View App</button>
+                    </div>
+                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3 bg-body">
+                        <img src="https://picsum.photos/300/150?2" class="w-100 rounded-3 mb-3"
+                            style="height: 120px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">Daily Science</h6>
+                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.7</p>
+                        <button class="install-btn w-100">View App</button>
+                    </div>
+                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3 bg-body">
+                        <img src="https://picsum.photos/300/150?3" class="w-100 rounded-3 mb-3"
+                            style="height: 120px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">Local Alerts</h6>
+                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.6</p>
+                        <button class="install-btn w-100">View App</button>
+                    </div>
+                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3 bg-body">
+                        <img src="https://picsum.photos/300/150?4" class="w-100 rounded-3 mb-3"
+                            style="height: 120px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">History Fact</h6>
+                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.9</p>
+                        <button class="install-btn w-100">View App</button>
+                    </div>
+                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3 bg-body">
+                        <img src="https://picsum.photos/300/150?5" class="w-100 rounded-3 mb-3"
+                            style="height: 120px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">Space Updates</h6>
+                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.8</p>
+                        <button class="install-btn w-100">View App</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. APP COLLECTIONS -->
+        <section class="apps-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-5 text-start">App Collections</h2>
+
+                <div class="row g-5">
+                    <!-- Column 1: News Apps -->
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-newspaper fs-3 me-2" style="color: var(--primary);"></i>
+                            <h4 class="mb-0 fw-bold">News Apps</h4>
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                            <div
+                                class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift">
+                                <img src="https://picsum.photos/80/80?a1" class="rounded-3 me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">World Times</h6>
+                                    <small class="text-muted">Global coverage</small>
+                                </div>
+                            </div>
+                            <div
+                                class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift">
+                                <img src="https://picsum.photos/80/80?a2" class="rounded-3 me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Biz News Network</h6>
+                                    <small class="text-muted">Finance & Trade</small>
+                                </div>
+                            </div>
+                            <div
+                                class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift">
+                                <img src="https://picsum.photos/80/80?a3" class="rounded-3 me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Sports Brief</h6>
+                                    <small class="text-muted">Live scores & news</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Research Tools -->
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-search fs-3 me-2" style="color: var(--info);"></i>
+                            <h4 class="mb-0 fw-bold">Research Tools</h4>
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                            <div
+                                class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift">
+                                <img src="https://picsum.photos/80/80?b1" class="rounded-3 me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Scholar Search</h6>
+                                    <small class="text-muted">Academic papers</small>
+                                </div>
+                            </div>
+                            <div
+                                class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift">
+                                <img src="https://picsum.photos/80/80?b2" class="rounded-3 me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Data Metrics</h6>
+                                    <small class="text-muted">Public datasets</small>
+                                </div>
+                            </div>
+                            <div
+                                class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift">
+                                <img src="https://picsum.photos/80/80?b3" class="rounded-3 me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Geo Mapping</h6>
+                                    <small class="text-muted">Advanced mapping</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Reference Apps -->
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-journal-bookmark fs-3 me-2" style="color: var(--success);"></i>
+                            <h4 class="mb-0 fw-bold">Reference Apps</h4>
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                            <div
+                                class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift">
+                                <img src="https://picsum.photos/80/80?c1" class="rounded-3 me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Dictionary Pro</h6>
+                                    <small class="text-muted">Words & synonyms</small>
+                                </div>
+                            </div>
+                            <div
+                                class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift">
+                                <img src="https://picsum.photos/80/80?c2" class="rounded-3 me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Almanac Digital</h6>
+                                    <small class="text-muted">Annual facts & stats</small>
+                                </div>
+                            </div>
+                            <div
+                                class="app-card d-flex align-items-center text-start p-3 shadow-sm border-0 hover-lift">
+                                <img src="https://picsum.photos/80/80?c3" class="rounded-3 me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Law Library</h6>
+                                    <small class="text-muted">Legal reference</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. DISCOVER TOP PICKS -->
+        <section class="apps-section py-5" style="background-color: rgba(184, 164, 255, 0.05);">
+            <div class="container">
+                <h2 class="section-title mb-5 text-center fw-bold">Discover Top Picks</h2>
+                <div class="row align-items-center g-5">
+                    <div class="col-md-6 order-2 order-md-1">
+                        <div class="badge bg-primary text-white px-3 py-2 rounded-pill mb-3">Editorial Choice</div>
+                        <h3 class="fw-bold mb-3">Science Weekly Editor Focus</h3>
+                        <p class="text-muted mb-4 fs-5" style="line-height: 1.6;">
+                            Our editors have selected this incredible app for its thorough, well-researched daily
+                            briefings on scientific breakthroughs. It brings complex papers down to engaging,
+                            easy-to-read articles that spark curiosity.
+                        </p>
+                        <div class="d-flex align-items-center mb-4 p-3 bg-body rounded-3 shadow-sm">
+                            <img src="https://picsum.photos/100/100?ed1" class="rounded-circle me-3"
+                                style="width: 60px; height: 60px;">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-dark">Science Briefings App</h6>
+                                <p class="small text-muted mb-0">Used by 2M+ readers</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn primary-btn px-4 py-2 hover-lift">Read Review</a>
+                    </div>
+                    <div class="col-md-6 order-1 order-md-2 text-center position-relative">
+                        <img src="https://picsum.photos/500/600?editorial"
+                            class="img-fluid rounded-4 shadow-lg hover-lift"
+                            style="max-height: 450px; object-fit: cover;" alt="Editorial Feature">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. WHY USE THIS PLATFORM -->
+        <section class="apps-section py-5">
+            <div class="container text-center">
+                <h2 class="section-title mb-5 fw-bold">Why Use This Platform</h2>
+                <div class="row g-5">
+                    <div class="col-md-4">
+                        <div class="hover-lift p-4 rounded-4 h-100" style="background: rgba(184, 164, 255, 0.05);">
+                            <div class="floating-element d-inline-block mb-3">
+                                <i class="bi bi-shield-check text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4 class="fw-bold">Reliable Sources</h4>
+                            <p class="text-muted mb-0">We heavily vet applications to make sure the information you
+                                receive is from trusted publishers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hover-lift p-4 rounded-4 h-100" style="background: rgba(167, 227, 255, 0.05);">
+                            <div class="floating-element d-inline-block mb-3" style="animation-delay: 1s;">
+                                <i class="bi bi-clock-history text-info" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4 class="fw-bold">Instant Updates</h4>
+                            <p class="text-muted mb-0">Be the first to know about breaking news and fresh knowledge
+                                right as it goes public.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hover-lift p-4 rounded-4 h-100" style="background: rgba(198, 247, 226, 0.05);">
+                            <div class="floating-element d-inline-block mb-3" style="animation-delay: 2s;">
+                                <i class="bi bi-stack text-success" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4 class="fw-bold">Curated Knowledge</h4>
+                            <p class="text-muted mb-0">Spend less time searching and more time reading with our
+                                expert-curated app collections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CTA -->
+        <section class="apps-section py-5 mb-5">
+            <div class="container">
+                <div class="gradient-bg rounded-5 p-5 text-center shadow-lg position-relative overflow-hidden hover-lift"
+                    style="background: linear-gradient(135deg, var(--info) 0%, var(--primary) 100%);">
+                    <div class="position-relative z-1">
+                        <h2 class="display-5 fw-bold mb-4 text-black">Stay Informed with the Best Apps</h2>
+                        <button
+                            class="btn btn-light btn-lg text-primary fw-bold px-5 rounded-pill shadow-sm hover-lift">Explore
+                            Information Apps <i class="bi bi-arrow-right ms-2"></i></button>
+                    </div>
+                    <i class="bi bi-globe position-absolute top-0 end-0 opacity-25 p-4"
+                        style="font-size: 8rem; color: white;"></i>
+                    <i class="bi bi-broadcast position-absolute bottom-0 start-0 opacity-25 p-4"
+                        style="font-size: 8rem; color: white; transform: rotate(15deg);"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- FOOTER -->
     <footer class="main-footer">

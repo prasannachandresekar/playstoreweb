@@ -54,95 +54,341 @@
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="hero-section text-center py-5 d-flex align-items-center" style="min-height: 250px;">
-        <div class="container">
-            <h1 class="mb-3">Entertainment Apps</h1>
-            <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                Have a relaxing time with amazing entertainment apps including streaming, games, music, and more.
-            </p>
-        </div>
-    </section>
+    <main>
 
-    <!-- APP GRID -->
-    <section class="apps-section py-4 mb-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/121" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Streamify</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Watch movies & series</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.9</p>
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section text-center position-relative overflow-hidden d-flex align-items-center"
+            style="min-height: 350px; background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(155, 89, 182, 0.1) 100%);">
+            <!-- Floating Icons -->
+            <div class="position-absolute top-0 start-0 translate-middle mt-5 ms-5 z-0"
+                style="animation: float 4s ease-in-out infinite;">
+                <i class="bi bi-controller text-danger opacity-25" style="font-size: 4rem;"></i>
+            </div>
+            <div class="position-absolute bottom-0 end-0 mb-5 me-5 z-0"
+                style="animation: float 5s ease-in-out infinite reverse;">
+                <i class="bi bi-music-note-beamed text-info opacity-25" style="font-size: 5rem;"></i>
+            </div>
+            <div class="position-absolute top-50 start-100 translate-middle z-0"
+                style="animation: float 6s ease-in-out infinite;">
+                <i class="bi bi-film text-primary opacity-25" style="font-size: 4rem;"></i>
+            </div>
+
+            <div class="container py-5 position-relative z-1 fade-in-up">
+                <span
+                    class="badge bg-danger rounded-pill px-3 py-2 mb-3 shadow-sm border border-danger border-opacity-25">Experience
+                    Magic</span>
+                <h1 class="display-3 fw-bold mb-3"
+                    style="background: -webkit-linear-gradient(45deg, var(--danger), var(--primary)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                    Entertainment Apps</h1>
+                <p class="lead text-muted mx-auto" style="max-width: 600px; font-size: 1.25rem;">
+                    Movies, music, games and more. Step into a world of endless fun and premium digital experiences.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. TRENDING NOW -->
+        <section class="apps-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4 text-start fw-bold">
+                    <i class="bi bi-fire text-danger me-2"></i>Trending Now
+                </h2>
+                <div class="horizontal-scroll px-1 pb-3">
+                    <div class="card hover-lift border-0 shadow-sm d-inline-block me-3 text-start bg-body"
+                        style="width: 280px;">
+                        <img src="https://picsum.photos/400/250?game" class="card-img-top" alt="Trending Game"
+                            style="height: 160px; object-fit: cover;">
+                        <div class="card-body p-3">
+                            <h5 class="fw-bold mb-1 text-truncate">Battle Royale Zero</h5>
+                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.9 (Millions of
+                                players)</div>
+                            <span class="badge bg-light text-dark">Gaming</span>
                         </div>
-                        <button class="install-btn ms-2">View</button>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/122" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">GameZone Plus</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Casual gaming fun</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.8</p>
+                    <div class="card hover-lift border-0 shadow-sm d-inline-block me-3 text-start bg-body"
+                        style="width: 280px;">
+                        <img src="https://picsum.photos/400/250?movie" class="card-img-top" alt="Trending Movie App"
+                            style="height: 160px; object-fit: cover;">
+                        <div class="card-body p-3">
+                            <h5 class="fw-bold mb-1 text-truncate">CineStream Max</h5>
+                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.8 (Top Rated)</div>
+                            <span class="badge bg-light text-dark">Streaming</span>
                         </div>
-                        <button class="install-btn ms-2">View</button>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/123" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Muziic Player</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Uninterrupted music</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.7</p>
+                    <div class="card hover-lift border-0 shadow-sm d-inline-block me-3 text-start bg-body"
+                        style="width: 280px;">
+                        <img src="https://picsum.photos/400/250?music" class="card-img-top" alt="Trending Music App"
+                            style="height: 160px; object-fit: cover;">
+                        <div class="card-body p-3">
+                            <h5 class="fw-bold mb-1 text-truncate">AudioWave Pro</h5>
+                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.7 (Editor's Choice)
+                            </div>
+                            <span class="badge bg-light text-dark">Music</span>
                         </div>
-                        <button class="install-btn ms-2">View</button>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/124" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Book Nook</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">E-books and audiobooks</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.6</p>
+                    <div class="card hover-lift border-0 shadow-sm d-inline-block me-3 text-start bg-body"
+                        style="width: 280px;">
+                        <img src="https://picsum.photos/400/250?social" class="card-img-top" alt="Trending Social App"
+                            style="height: 160px; object-fit: cover;">
+                        <div class="card-body p-3">
+                            <h5 class="fw-bold mb-1 text-truncate">ConnectSphere</h5>
+                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.6 (Rising Star)</div>
+                            <span class="badge bg-light text-dark">Social</span>
                         </div>
-                        <button class="install-btn ms-2">View</button>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/125" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Podcast Hub</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Your daily podcasts</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.8</p>
+                    <div class="card hover-lift border-0 shadow-sm d-inline-block me-3 text-start bg-body"
+                        style="width: 280px;">
+                        <img src="https://picsum.photos/400/250?game2" class="card-img-top" alt="Trending Game 2"
+                            style="height: 160px; object-fit: cover;">
+                        <div class="card-body p-3">
+                            <h5 class="fw-bold mb-1 text-truncate">Racing Legends</h5>
+                            <div class="text-warning small mb-2"><i class="bi bi-star-fill"></i> 4.8 (Must play)</div>
+                            <span class="badge bg-light text-dark">Gaming</span>
                         </div>
-                        <button class="install-btn ms-2">View</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0">
-                        <img src="https://picsum.photos/100/126" class="rounded-3 me-3"
-                            style="width: 80px; height: 80px; object-fit: cover; object-position: 50% 20%;">
-                        <div class="flex-grow-1">
-                            <h6 class="mb-1">Comics Daily</h6>
-                            <p class="text-muted small mb-1" style="line-height: 1.2;">Read popular comics</p>
-                            <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.5</p>
-                        </div>
-                        <button class="install-btn ms-2">View</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- 3. ENTERTAINMENT CATEGORIES -->
+        <section class="apps-section py-5" style="background-color: rgba(184, 164, 255, 0.05);">
+            <div class="container">
+                <h2 class="section-title mb-5 text-center fw-bold">Browse by Category</h2>
+                <div class="row g-4 text-center">
+                    <div class="col-md-3 col-6">
+                        <div class="app-card hover-lift h-100 p-4 border-0 shadow-sm"
+                            style="background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.02)); border-left: 4px solid #ff6b6b !important;">
+                            <i class="bi bi-play-circle-fill fs-1 d-block mb-3" style="color: #ff6b6b;"></i>
+                            <h5 class="fw-bold text-dark">Streaming</h5>
+                            <p class="text-muted small mb-0">Movies & TV</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="app-card hover-lift h-100 p-4 border-0 shadow-sm"
+                            style="background: linear-gradient(135deg, rgba(155, 89, 182, 0.1), rgba(155, 89, 182, 0.02)); border-left: 4px solid #9b59b6 !important;">
+                            <i class="bi bi-dpad-fill fs-1 d-block mb-3" style="color: #9b59b6;"></i>
+                            <h5 class="fw-bold text-dark">Gaming</h5>
+                            <p class="text-muted small mb-0">Action & Puzzles</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="app-card hover-lift h-100 p-4 border-0 shadow-sm"
+                            style="background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(52, 152, 219, 0.02)); border-left: 4px solid #3498db !important;">
+                            <i class="bi bi-headphones fs-1 d-block mb-3" style="color: #3498db;"></i>
+                            <h5 class="fw-bold text-dark">Music</h5>
+                            <p class="text-muted small mb-0">Audio & Podcasts</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="app-card hover-lift h-100 p-4 border-0 shadow-sm"
+                            style="background: linear-gradient(135deg, rgba(46, 204, 113, 0.1), rgba(46, 204, 113, 0.02)); border-left: 4px solid #2ecc71 !important;">
+                            <i class="bi bi-chat-heart-fill fs-1 d-block mb-3" style="color: #2ecc71;"></i>
+                            <h5 class="fw-bold text-dark">Social</h5>
+                            <p class="text-muted small mb-0">Connect & Share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. POPULAR PICKS -->
+        <section class="apps-section py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="section-title mb-0 fw-bold ">Popular Picks</h2>
+                    <button class="btn btn-outline-primary rounded-pill px-4">See All <i
+                            class="bi bi-arrow-right"></i></button>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div
+                            class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0 hover-lift bg-body">
+                            <img src="https://picsum.photos/100/121?pop1" class="rounded-4 me-3"
+                                style="width: 75px; height: 75px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 text-dark">Streamify Plus</h6>
+                                <p class="text-muted small mb-1">Entertainment</p>
+                                <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</div>
+                            </div>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div
+                            class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0 hover-lift bg-body">
+                            <img src="https://picsum.photos/100/122?pop2" class="rounded-4 me-3"
+                                style="width: 75px; height: 75px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 text-dark">RPG Adventure</h6>
+                                <p class="text-muted small mb-1">Role Playing</p>
+                                <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.7</div>
+                            </div>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div
+                            class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0 hover-lift bg-body">
+                            <img src="https://picsum.photos/100/123?pop3" class="rounded-4 me-3"
+                                style="width: 75px; height: 75px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 text-dark">Social Vibe</h6>
+                                <p class="text-muted small mb-1">Social Networking</p>
+                                <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.5</div>
+                            </div>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div
+                            class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0 hover-lift bg-body">
+                            <img src="https://picsum.photos/100/124?pop4" class="rounded-4 me-3"
+                                style="width: 75px; height: 75px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 text-dark">Puzzle Cube</h6>
+                                <p class="text-muted small mb-1">Mind Games</p>
+                                <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</div>
+                            </div>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div
+                            class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0 hover-lift bg-body">
+                            <img src="https://picsum.photos/100/125?pop5" class="rounded-4 me-3"
+                                style="width: 75px; height: 75px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 text-dark">Beat Maker Studio</h6>
+                                <p class="text-muted small mb-1">Music & Audio</p>
+                                <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.6</div>
+                            </div>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div
+                            class="app-card d-flex align-items-center text-start p-3 h-100 shadow-sm border-0 hover-lift bg-body">
+                            <img src="https://picsum.photos/100/126?pop6" class="rounded-4 me-3"
+                                style="width: 75px; height: 75px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 text-dark">Comics Reader</h6>
+                                <p class="text-muted small mb-1">Books & Comics</p>
+                                <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.4</div>
+                            </div>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FEATURED APP -->
+        <section class="apps-section py-0">
+            <div class="container">
+                <div class="card border-0 shadow-lg rounded-5 overflow-hidden text-white"
+                    style="background: url('https://picsum.photos/1200/400?gaming') center/cover;">
+                    <div class="card-img-overlay d-flex align-items-center"
+                        style="background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 100%); border-radius: inherit;">
+                        <div class="p-4 p-md-5" style="max-width: 600px;">
+                            <div class="badge bg-danger mb-3 px-3 py-2 rounded-pill">App of the Month</div>
+                            <h2 class="display-5 fw-bold mb-3">Nebula Explorers</h2>
+                            <p class="lead mb-4 opacity-75">Embark on an epic space adventure that pushes the boundaries
+                                of mobile gaming. Stunning graphics, gripping storyline, and multiplayer battles.</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <button class="btn btn-light btn-lg text-dark fw-bold px-4 rounded-pill hover-lift">Play
+                                    Now</button>
+                                <button class="btn btn-outline-light btn-lg rounded-pill px-4 icon-btn"><i
+                                        class="bi bi-play-fill"></i> Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. USER FAVORITES -->
+        <section class="apps-section py-5">
+            <div class="container">
+                <h2 class="section-title mb-4 text-center fw-bold">User Favorites</h2>
+                <div class="horizontal-scroll px-1 pb-3 text-center">
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm mx-2 p-4 text-center bg-body"
+                        style="width: 220px;">
+                        <img src="https://picsum.photos/150/150?u1"
+                            class="rounded-circle mb-3 border border-3 border-white shadow-sm"
+                            style="width: 100px; height: 100px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">Cinematic</h6>
+                        <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i></div>
+                        <p class="text-muted small">"Best streaming app!"</p>
+                    </div>
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm mx-2 p-4 text-center bg-body"
+                        style="width: 220px;">
+                        <img src="https://picsum.photos/150/150?u2"
+                            class="rounded-circle mb-3 border border-3 border-white shadow-sm"
+                            style="width: 100px; height: 100px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">Retro Games</h6>
+                        <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i></div>
+                        <p class="text-muted small">"Pure nostalgia."</p>
+                    </div>
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm mx-2 p-4 text-center bg-body"
+                        style="width: 220px;">
+                        <img src="https://picsum.photos/150/150?u3"
+                            class="rounded-circle mb-3 border border-3 border-white shadow-sm"
+                            style="width: 100px; height: 100px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">Tune Flow</h6>
+                        <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i></div>
+                        <p class="text-muted small">"Excellent sound curation."</p>
+                    </div>
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm mx-2 p-4 text-center bg-body"
+                        style="width: 220px;">
+                        <img src="https://picsum.photos/150/150?u4"
+                            class="rounded-circle mb-3 border border-3 border-white shadow-sm"
+                            style="width: 100px; height: 100px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">Word Clash</h6>
+                        <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-muted small">"Highly addictive!"</p>
+                    </div>
+                    <div class="app-card d-inline-block hover-lift border-0 shadow-sm mx-2 p-4 text-center bg-body"
+                        style="width: 220px;">
+                        <img src="https://picsum.photos/150/150?u5"
+                            class="rounded-circle mb-3 border border-3 border-white shadow-sm"
+                            style="width: 100px; height: 100px; object-fit: cover;">
+                        <h6 class="fw-bold mb-1 text-dark">Lofi Hub</h6>
+                        <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i></div>
+                        <p class="text-muted small">"Perfect for studying."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CTA -->
+        <section class="apps-section py-5 mb-5">
+            <div class="container">
+                <div class="gradient-bg rounded-5 p-5 text-center shadow-lg position-relative overflow-hidden hover-lift"
+                    style="background: linear-gradient(135deg, #ff6b6b 0%, var(--primary) 100%);">
+                    <div class="position-relative z-1">
+                        <h2 class="display-5 fw-bold mb-4 text-white">Discover Your Next Favorite App</h2>
+                        <button
+                            class="btn btn-light btn-lg text-primary fw-bold px-5 rounded-pill shadow-sm hover-lift">Explore
+                            Entertainment Apps <i class="bi bi-controller ms-2"></i></button>
+                    </div>
+                    <i class="bi bi-emoji-smile-fill position-absolute top-0 end-0 opacity-25 p-4"
+                        style="font-size: 8rem; color: white;"></i>
+                    <i class="bi bi-headphones position-absolute bottom-0 start-0 opacity-25 p-4"
+                        style="font-size: 8rem; color: white; transform: rotate(-15deg);"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- FOOTER -->
     <footer class="main-footer">
