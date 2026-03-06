@@ -89,85 +89,136 @@
     </header>
 
     <!-- HERO / AUTH -->
-    <section class="hero-section py-5 d-flex align-items-center" style="min-height: 80vh;">
-        <div class="container d-flex justify-content-center">
-            <div class="app-card shadow-lg p-0 overflow-hidden w-100 border-0"
-                style="max-width: 900px; border-radius: 20px;">
-                <div class="row g-0">
-                    <!-- LOGIN LEFT -->
-                    <div class="col-md-6 p-5 text-start d-flex flex-column justify-content-center position-relative">
-                        <div class="mb-4 text-center">
-                            <h4 class="mb-3">Welcome Back</h4>
-                            <p class="text-muted small">Login to continue exploring</p>
+    <section class="auth-hero py-5 d-flex align-items-center" style="min-height: 90vh;">
+        <!-- Background Shapes -->
+        <div class="auth-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+
+        <div class="container d-flex flex-column align-items-center position-relative z-index-10">
+            <!-- Mobile Tabs -->
+            <div class="auth-tabs-mobile w-100" style="max-width: 400px;">
+                <button class="auth-tab active" id="tab-login">Login</button>
+                <button class="auth-tab" id="tab-signup">Signup</button>
+            </div>
+
+            <div class="auth-wrapper auth-glass" id="auth-container">
+                <!-- SIGNUP FORM (Right-hand logic) -->
+                <div class="auth-form-container signup-container" id="signup-form">
+                    <form class="p-4 p-md-5 h-100 d-flex flex-column justify-content-center text-start">
+                        <h2 class="fw-bold mb-2">Create Account</h2>
+                        <div class="social-container text-center">
+                            <a href="#"><i class="bi bi-google"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                            <a href="#"><i class="bi bi-x"></i></a>
                         </div>
-                        <form>
-                            <div class="mb-3">
-                                <label class="form-label text-muted small fw-bold">Email Address</label>
-                                <input type="email"
-                                    class="form-control bg-transparent border-secondary opacity-50 px-3 py-2"
-                                    style="color: var(--text-color);" placeholder="name@example.com" required>
-                            </div>
-                            <div class="mb-4">
-                                <label class="form-label text-muted small fw-bold d-flex justify-content-between">
-                                    <span>Password</span>
-                                    <a href="#" class="text-decoration-none" style="color: var(--primary);">Forgot
-                                        password?</a>
-                                </label>
-                                <input type="password"
-                                    class="form-control bg-transparent border-secondary opacity-50 px-3 py-2"
-                                    style="color: var(--text-color);" placeholder="********" required>
-                            </div>
-                            <button type="submit" class="btn primary-btn w-100 py-2">Login</button>
-                            <p class="text-center mt-4 mb-0 small text-muted">
-                                Don't have an account?
-                                <a href="#signup-section" class="fw-bold"
-                                    style="color: var(--primary); text-decoration: none;">Create account</a>
+                        <span class="text-muted small text-center mb-3">or use your email for registration</span>
+                        <div class="mb-2">
+                            <label class="form-label text-muted small fw-bold">Full Name</label>
+                            <input type="text"
+                                class="form-control bg-transparent border-secondary auth-input opacity-75"
+                                placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label text-muted small fw-bold">Email</label>
+                            <input type="email"
+                                class="form-control bg-transparent border-secondary auth-input opacity-75"
+                                placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-muted small fw-bold">Password</label>
+                            <input type="password"
+                                class="form-control bg-transparent border-secondary auth-input opacity-75"
+                                placeholder="********" required>
+                        </div>
+                        <button type="submit" class="btn primary-btn w-100 py-2 shadow-sm">Sign Up</button>
+                    </form>
+                </div>
+
+                <!-- LOGIN FORM -->
+                <div class="auth-form-container login-container active" id="login-form">
+                    <form class="p-4 p-md-5 h-100 d-flex flex-column justify-content-center text-start">
+                        <h2 class="fw-bold mb-2">Welcome Back</h2>
+                        <div class="social-container text-center">
+                            <a href="#"><i class="bi bi-google"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                            <a href="#"><i class="bi bi-x"></i></a>
+                        </div>
+                        <span class="text-muted small text-center mb-3">or use your account</span>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small fw-bold">Email</label>
+                            <input type="email"
+                                class="form-control bg-transparent border-secondary auth-input opacity-75"
+                                placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-muted small fw-bold d-flex justify-content-between">
+                                Password
+                                <a href="#" class="text-decoration-none small text-primary">Forgot?</a>
+                            </label>
+                            <input type="password"
+                                class="form-control bg-transparent border-secondary auth-input opacity-75"
+                                placeholder="********" required>
+                        </div>
+                        <button type="submit" class="btn primary-btn w-100 py-2 shadow-sm">Sign In</button>
+                    </form>
+                </div>
+
+                <!-- OVERLAY (Desktop Only) -->
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h2 class="fw-bold mb-3">Welcome Back!</h2>
+                            <p class="mb-4 opacity-75">To keep connected with us please login with your personal info
                             </p>
-                        </form>
-                        <!-- Vertical Divider for Desktop -->
-                        <div class="d-none d-md-block position-absolute top-50 end-0 translate-middle-y"
-                            style="width: 1px; height: 75%; background-color: var(--border-color);"></div>
-                    </div>
-
-                    <!-- Mobile Divider -->
-                    <div class="d-block d-md-none w-100 mx-auto"
-                        style="height: 1px; width: 85% !important; background-color: var(--border-color);"></div>
-
-                    <!-- SIGNUP RIGHT -->
-                    <div id="signup-section" class="col-md-6 p-5 text-start d-flex flex-column justify-content-center"
-                        style="background-color: rgba(184, 164, 255, 0.05);">
-                        <div class="mb-4 text-center">
-                            <h4 class="mb-3">Create an Account</h4>
-                            <p class="text-muted small">Join AppHub and discover amazing apps</p>
+                            <button class="btn btn-outline-light rounded-pill px-5 fw-bold" id="signIn">Sign In</button>
                         </div>
-                        <form>
-                            <div class="mb-3">
-                                <label class="form-label text-muted small fw-bold">Full Name</label>
-                                <input type="text"
-                                    class="form-control bg-transparent border-secondary opacity-50 px-3 py-2"
-                                    style="color: var(--text-color);" placeholder="John Doe" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label text-muted small fw-bold">Email Address</label>
-                                <input type="email"
-                                    class="form-control bg-transparent border-secondary opacity-50 px-3 py-2"
-                                    style="color: var(--text-color);" placeholder="name@example.com" required>
-                            </div>
-                            <div class="mb-4">
-                                <label class="form-label text-muted small fw-bold">Password</label>
-                                <input type="password"
-                                    class="form-control bg-transparent border-secondary opacity-50 px-3 py-2"
-                                    style="color: var(--text-color);" placeholder="********" required>
-                            </div>
-                            <button type="submit"
-                                class="install-btn w-100 py-2 fs-6 fw-medium d-block text-center text-dark text-decoration-none shadow-sm"
-                                style="background-color: var(--secondary);">Create Account</button>
-                        </form>
+                        <div class="overlay-panel overlay-right">
+                            <h2 class="fw-bold mb-3">Hello, Friend!</h2>
+                            <p class="mb-4 opacity-75">Enter your personal details and start your journey with us</p>
+                            <button class="btn btn-outline-light rounded-pill px-5 fw-bold" id="signUp">Sign Up</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('auth-container');
+
+        const tabLogin = document.getElementById('tab-login');
+        const tabSignup = document.getElementById('tab-signup');
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+
+        // Desktop Sliding Logic
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+
+        // Mobile Tab Logic
+        tabLogin.addEventListener('click', () => {
+            tabLogin.classList.add('active');
+            tabSignup.classList.remove('active');
+            loginForm.classList.add('active');
+            signupForm.classList.remove('active');
+        });
+
+        tabSignup.addEventListener('click', () => {
+            tabSignup.classList.add('active');
+            tabLogin.classList.remove('active');
+            signupForm.classList.add('active');
+            loginForm.classList.remove('active');
+        });
+    </script>
 
     <!-- FOOTER -->
     <footer class="main-footer">
