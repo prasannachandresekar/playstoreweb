@@ -44,6 +44,17 @@ body.dark-mode .dropdown-menu .dropdown-item:hover {
     color: white;
 }
 
+/* Fix hamburger visibility in dark mode */
+body.dark-mode .navbar-toggler {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .navbar-toggler i {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
 /* Dark Mode Text Fixes */
 body.dark-mode .text-muted {
     color: #94a3b8 !important;
@@ -222,8 +233,8 @@ body {
 .horizontal-scroll {
     display: flex;
     overflow-x: auto;
-    gap: 25px;
-    padding: 15px 5px 30px 5px;
+    gap: 20px;
+    padding: 15px 15px 30px 15px;
     scrollbar-width: none;
     -ms-overflow-style: none;
     scroll-behavior: smooth;
@@ -235,8 +246,8 @@ body {
 }
 
 .trend-card {
-    min-width: 280px;
-    flex-shrink: 0;
+    min-width: 240px;
+    flex: 0 0 240px;
 }
 
 .gradient-bg {
@@ -741,4 +752,11 @@ body.dark-mode .auth-glass {
         padding-bottom: 10px;
     }
 
+}
+
+.horizontal-scroll {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    justify-items: center;
 }
