@@ -42,9 +42,7 @@
                                 <li><a class="dropdown-item" href="tools.html">Tools</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html">About</a></li>
                     </ul>
                     <div class="nav-actions">
                         <button id="themeToggle" class="icon-btn"><i class="bi bi-moon"></i></button>
@@ -55,8 +53,45 @@
         </nav>
     </header>
 
+    <!-- HERO -->
+    <section id="about" class="hero-section py-5">
+        <div class="container text-center">
+            <h1 class="mb-4">About Us</h1>
+            <p class="lead mb-4 mx-auto" style="max-width: 700px; color: var(--text-color);">
+                We are more than just an app marketplace – we are a platform built to empower discovery. Our story began
+                with a simple idea: making the best digital tools accessible to everyone in an organized, beautiful, and
+                safe environment.
+            </p>
+            <h5 class="mb-5" style="color: var(--primary);">Our Mission: To connect people with the right tools at the
+                right time.</h5>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="app-card text-center p-4">
+                        <i class="bi bi-globe2 fs-1 d-block mb-3" style="color: var(--primary) !important;"></i>
+                        <h6>Global Reach</h6>
+                        <p class="text-muted small mb-0">Access apps worldwide</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="app-card text-center p-4">
+                        <i class="bi bi-heart fs-1 d-block mb-3" style="color: var(--primary) !important;"></i>
+                        <h6>User Centric</h6>
+                        <p class="text-muted small mb-0">Design that cares for you</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="app-card text-center p-4">
+                        <i class="bi bi-speedometer2 fs-1 d-block mb-3" style="color: var(--primary) !important;"></i>
+                        <h6>High Performance</h6>
+                        <p class="text-muted small mb-0">Lightning fast discovery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- BLOGS -->
-    <section class="apps-section py-5" style="background-color: rgba(184, 164, 255, 0.05);">
+    <section id="blogs" class="apps-section py-5" style="background-color: rgba(184, 164, 255, 0.05);">
         <div class="container">
             <h2 class="section-title text-center mb-5">Latest Blogs</h2>
             <div class="row g-4 d-flex justify-content-center text-start">
@@ -154,6 +189,108 @@
         </div>
     </section>
 
+    <!-- PRICING -->
+    <section id="pricing" class="apps-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Pricing Plans</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="app-card border-0 h-100 p-4 text-center hover-lift">
+                        <h4 class="mb-3">Free</h4>
+                        <h2 class="mb-4">$0 <span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4 text-muted flex-grow-1 text-start ps-4">
+                            <li class="mb-3"><i class="bi bi-check-circle text-success me-3"></i>Basic App Access</li>
+                            <li class="mb-3"><i class="bi bi-check-circle text-success me-3"></i>Community Support</li>
+                            <li class="mb-3"><i class="bi bi-x-circle opacity-50 me-3"></i>Ad-free Experience</li>
+                        </ul>
+                        <button class="btn primary-btn w-100">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="app-card border-0 h-100 p-4 text-center position-relative shadow-sm hover-lift"
+                        style="border: 2px solid var(--primary) !important;">
+                        <span class="badge position-absolute top-0 start-50 translate-middle rounded-pill px-3 py-2"
+                            style="background: var(--primary);">Most Popular</span>
+                        <h4 class="mb-3">Pro</h4>
+                        <h2 class="mb-4">$10 <span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4 text-muted flex-grow-1 text-start ps-4">
+                            <li class="mb-3"><i class="bi bi-check-circle text-success me-3"></i>All Free Features</li>
+                            <li class="mb-3"><i class="bi bi-check-circle text-success me-3"></i>Ad-free Experience</li>
+                            <li class="mb-3"><i class="bi bi-check-circle text-success me-3"></i>Priority Support</li>
+                        </ul>
+                        <button class="btn primary-btn w-100">Upgrade to Pro</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="app-card border-0 h-100 p-4 text-center hover-lift">
+                        <h4 class="mb-3">Developer</h4>
+                        <h2 class="mb-4">$30 <span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4 text-muted flex-grow-1 text-start ps-4">
+                            <li class="mb-3"><i class="bi bi-check-circle text-success me-3"></i>API Access</li>
+                            <li class="mb-3"><i class="bi bi-check-circle text-success me-3"></i>App Publishing</li>
+                            <li class="mb-3"><i class="bi bi-check-circle text-success me-3"></i>Dev Console</li>
+                        </ul>
+                        <button class="btn primary-btn w-100"
+                            style="background: var(--text-color); color: var(--bg-color);">Developer
+                            Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="apps-section py-5" style="background-color: rgba(184, 164, 255, 0.05);">
+        <div class="container mb-4">
+            <h2 class="section-title text-center mb-5">Contact Us</h2>
+            <div class="row g-5">
+                <div class="col-md-6 text-start">
+                    <h4 class="mb-4">Get In Touch</h4>
+                    <p class="text-muted mb-5">Have questions or feedback? We'd love to hear from you. Fill out the form
+                        and our team will get back to you shortly.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-geo-alt fs-4 me-4" style="color: var(--primary) !important;"></i>
+                        <span class="text-muted">123 AppHub Street, Silicon Valley, CA</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-envelope fs-4 me-4" style="color: var(--primary) !important;"></i>
+                        <span class="text-muted">support@apphub.com</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-5">
+                        <i class="bi bi-telephone fs-4 me-4" style="color: var(--primary) !important;"></i>
+                        <span class="text-muted">+1 (555) 123-4567</span>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <a href="#" class="fs-4" style="color: var(--text-color);"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="fs-4" style="color: var(--text-color);"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="fs-4" style="color: var(--text-color);"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form class="app-card p-4 p-md-5 text-start border-0 shadow-sm" style="border-radius: 14px;">
+                        <div class="mb-4">
+                            <label class="form-label text-muted small fw-bold">Your Name</label>
+                            <input type="text" class="form-control bg-transparent border-secondary opacity-75 px-3 py-2"
+                                style="color: var(--text-color);" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-muted small fw-bold">Your Email</label>
+                            <input type="email"
+                                class="form-control bg-transparent border-secondary opacity-75 px-3 py-2"
+                                style="color: var(--text-color);" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-muted small fw-bold">Message</label>
+                            <textarea class="form-control bg-transparent border-secondary opacity-75 px-3 py-2" rows="5"
+                                style="color: var(--text-color);" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn w-100 py-2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="main-footer">
         <div class="container">
@@ -212,17 +349,9 @@
             <i class="bi bi-grid"></i>
             <span>Services</span>
         </a>
-        <a href="#">
-            <i class="bi bi-stars"></i>
-            <span>Apps</span>
-        </a>
         <a href="blogs.html">
             <i class="bi bi-newspaper"></i>
-            <span>Blogs</span>
-        </a>
-        <a href="auth.html">
-            <i class="bi bi-person"></i>
-            <span>Account</span>
+            <span>About</span>
         </a>
     </div>
 
