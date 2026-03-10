@@ -234,15 +234,39 @@ body {
     display: flex;
     overflow-x: auto;
     gap: 20px;
-    padding: 15px 15px 30px 15px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    padding-bottom: 10px;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
 }
 
 .horizontal-scroll::-webkit-scrollbar {
     display: none;
+}
+
+.horizontal-scroll .card {
+    min-width: 260px;
+    flex: 0 0 auto;
+}
+
+.horizontal-scroll .card {
+    height: 100%;
+}
+
+.horizontal-scroll .card-body {
+    min-height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-scroll .card h5 {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.horizontal-scroll .card-img-top {
+    height: 160px;
+    object-fit: cover;
 }
 
 .trend-card {

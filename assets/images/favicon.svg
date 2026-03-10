@@ -1,3 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#b8a4ff">
-<path d="M12 2L2 7l10 5 10-5-10-5zm0 7L2 4v13l10 5 10-5V4l-10 5z"></path>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8a4ff"></stop>
+      <stop offset="100%" stop-color="#8ecae6"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M32 4
+           L54 14
+           L50 44
+           L32 58
+           L14 44
+           L10 14
+           Z" fill="url(#grad)"></path>
+
+  <!-- App grid -->
+  <rect x="23" y="22" width="7" height="7" rx="1.5" fill="white"></rect>
+  <rect x="34" y="22" width="7" height="7" rx="1.5" fill="white"></rect>
+  <rect x="23" y="33" width="7" height="7" rx="1.5" fill="white"></rect>
+  <rect x="34" y="33" width="7" height="7" rx="1.5" fill="white"></rect>
+
 </svg>
