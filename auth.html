@@ -21,72 +21,7 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header class="main-header">
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="assets/images/logo.svg" class="logo">
-                    <span class="brand-text">AppHub</span>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                    <i class="bi bi-list"></i>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navMenu">
-
-                    <ul class="navbar-nav mx-auto">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                Home
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="index.html">Clean Home</a></li>
-                                <li><a class="dropdown-item" href="home2.html">Hype Home</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                Services
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="education.html">Education Apps</a></li>
-                                <li><a class="dropdown-item" href="information.html">Information Apps</a></li>
-                                <li><a class="dropdown-item" href="entertainment.html">Entertainment Apps</a></li>
-                                <li><a class="dropdown-item" href="tools.html">Tools</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="blogs.html">About</a>
-                        </li>
-
-                    </ul>
-
-                    <div class="nav-actions">
-
-                        <button id="themeToggle" class="icon-btn">
-                            <i class="bi bi-moon"></i>
-                        </button>
-
-                        <a href="#" class="login-btn">
-                            Login
-                        </a>
-
-                    </div>
-
-                </div>
-            </div>
-        </nav>
-
-    </header>
+    <!-- HEADER REMOVED FOR STANDALONE AUTH PAGE -->
 
     <!-- HERO / AUTH -->
     <section class="auth-hero py-5 d-flex align-items-center" style="min-height: 90vh;">
@@ -96,7 +31,9 @@
             <div class="shape shape-2"></div>
         </div>
 
-        <div class="container d-flex flex-column align-items-center position-relative z-index-10">
+        <div class="container d-flex flex-column align-items-center position-relative z-index-10 pt-4">
+            <!-- Mobile Tabs -->
+
             <!-- Mobile Tabs -->
             <div class="auth-tabs-mobile w-100" style="max-width: 400px;">
                 <button class="auth-tab active" id="tab-login">Login</button>
@@ -107,13 +44,15 @@
                 <!-- SIGNUP FORM (Right-hand logic) -->
                 <div class="auth-form-container signup-container" id="signup-form">
                     <form class="p-4 p-md-5 h-100 d-flex flex-column justify-content-center text-start">
-                        <h2 class="fw-bold mb-2">Create Account</h2>
-                        <div class="social-container text-center">
-                            <a href="#"><i class="bi bi-google"></i></a>
-                            <a href="#"><i class="bi bi-github"></i></a>
-                            <a href="#"><i class="bi bi-x"></i></a>
+                        <div class="auth-logo mb-4 text-center">
+                            <a href="index.html"
+                                class="d-flex align-items-center justify-content-center text-decoration-none">
+                                <img src="assets/images/logo.svg" alt="AppHub Logo" style="width: 40px;">
+                                <span class="brand-text ms-2 fs-4">AppHub</span>
+                            </a>
                         </div>
-                        <span class="text-muted small text-center mb-3">or use your email for registration</span>
+                        <h2 class="fw-bold mb-2">Create Account</h2>
+                        <span class="text-muted small text-center mb-3">Please use your email for registration</span>
                         <div class="mb-2">
                             <label class="form-label text-muted small fw-bold">Full Name</label>
                             <input type="text"
@@ -132,13 +71,29 @@
                                 class="form-control bg-transparent border-secondary auth-input opacity-75"
                                 placeholder="********" required>
                         </div>
-                        <button type="submit" class="btn primary-btn w-100 py-2 shadow-sm">Sign Up</button>
+                        <button type="submit" class="btn primary-btn w-100 py-2 shadow-sm mb-4">Sign Up</button>
+
+                        <div class="social-container text-center mb-0">
+                            <p class="text-muted small mb-3">Or sign up with</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#"><i class="bi bi-google"></i></a>
+                                <a href="#"><i class="bi bi-github"></i></a>
+                                <a href="#"><i class="bi bi-x"></i></a>
+                            </div>
+                        </div>
                     </form>
                 </div>
 
                 <!-- LOGIN FORM -->
                 <div class="auth-form-container login-container active" id="login-form">
                     <form class="p-4 p-md-5 h-100 d-flex flex-column justify-content-center text-start">
+                        <div class="auth-logo mb-4 text-center">
+                            <a href="index.html"
+                                class="d-flex align-items-center justify-content-center text-decoration-none">
+                                <img src="assets/images/logo.svg" alt="AppHub Logo" style="width: 40px;">
+                                <span class="brand-text ms-2 fs-4">AppHub</span>
+                            </a>
+                        </div>
                         <h2 class="fw-bold mb-2">Welcome Back</h2>
                         <div class="social-container text-center">
                             <a href="#"><i class="bi bi-google"></i></a>
@@ -152,14 +107,20 @@
                                 class="form-control bg-transparent border-secondary auth-input opacity-75"
                                 placeholder="name@example.com" required>
                         </div>
-                        <div class="mb-4">
-                            <label class="form-label text-muted small fw-bold d-flex justify-content-between">
-                                Password
-                                <a href="#" class="text-decoration-none small text-primary">Forgot?</a>
-                            </label>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small fw-bold">Password</label>
                             <input type="password"
                                 class="form-control bg-transparent border-secondary auth-input opacity-75"
                                 placeholder="********" required>
+                        </div>
+                        <div class="mb-4 d-flex justify-content-between align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rememberMe">
+                                <label class="form-check-label small text-muted" for="rememberMe">
+                                    Remember Me
+                                </label>
+                            </div>
+                            <a href="#" class="text-decoration-none small text-primary fw-medium">Forgot Password?</a>
                         </div>
                         <button type="submit" class="btn primary-btn w-100 py-2 shadow-sm">Sign In</button>
                     </form>

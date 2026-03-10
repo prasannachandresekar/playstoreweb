@@ -113,7 +113,10 @@
                                 servers worldwide. Ensure your digital footprint remains secure and anonymous on any
                                 network.</p>
                             <button
-                                class="btn btn-outline-success px-4 rounded-pill fw-medium hover-lift z-1 position-relative">Download</button>
+                                class="btn btn-outline-success px-4 rounded-pill fw-medium hover-lift z-1 position-relative app-preview-btn"
+                                data-app="Defense Pro VPN"
+                                data-desc="Enterprise-grade encryption and ultra-fast servers worldwide. Ensure your digital footprint remains secure and anonymous on any network."
+                                data-img="assets/images/tool1.jpg" data-play="#" data-ios="#">Download</button>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -129,7 +132,10 @@
                                         <h6 class="fw-bold mb-1">Archive Master</h6>
                                         <p class="text-muted small mb-0">Compress & extract seamlessly</p>
                                     </div>
-                                    <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                                    <button class="btn btn-primary btn-sm rounded-pill px-3 app-preview-btn"
+                                        data-app="Archive Master"
+                                        data-desc="Compress and extract files seamlessly with high efficiency and support for all major formats."
+                                        data-img="assets/images/tool1.jpg" data-play="#" data-ios="#">Get</button>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -143,7 +149,10 @@
                                         <h6 class="fw-bold mb-1">Battery Optimizer</h6>
                                         <p class="text-muted small mb-0">Extend battery life instantly</p>
                                     </div>
-                                    <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                                    <button class="btn btn-primary btn-sm rounded-pill px-3 app-preview-btn"
+                                        data-app="Battery Optimizer"
+                                        data-desc="Extend your battery life with intelligent power management and background app freezing."
+                                        data-img="assets/images/tool1.jpg" data-play="#" data-ios="#">Get</button>
                                 </div>
                             </div>
                         </div>
@@ -302,7 +311,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="btn primary-btn btn-lg px-5 rounded-pill shadow-sm">Get App</button>
+                        <button class="btn primary-btn btn-lg px-5 rounded-pill shadow-sm app-preview-btn"
+                            data-app="System Mechanic Pro"
+                            data-desc="The ultimate device management suite for optimization, security, and real-time protection."
+                            data-img="assets/images/tool8.jpg" data-play="#" data-ios="#">Get App</button>
                     </div>
                 </div>
             </div>
@@ -425,6 +437,64 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- App Preview Modal -->
+    <div class="modal fade" id="appPreviewModal" tabindex="-1" aria-labelledby="appPreviewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 p-md-5 pt-0 pt-md-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-5 text-center">
+                            <img src="" id="modalAppImg" class="img-fluid rounded-4 shadow-sm mb-3 mb-md-0"
+                                alt="App Preview" style="max-height: 250px; width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="ps-md-3">
+                                <h2 class="fw-bold mb-2" id="modalAppName">App Name</h2>
+                                <p class="text-muted mb-4 lead" id="modalAppDesc">App description goes here.</p>
+
+                                <div class="d-grid gap-3">
+                                    <a href="#" id="playStoreBtn"
+                                        class="download-btn play-store-btn d-flex align-items-center justify-content-center py-3 rounded-3 text-decoration-none">
+                                        <i class="bi bi-play-fill fs-4 me-2"></i>
+                                        <div class="text-start">
+                                            <small class="d-block lh-1">GET IT ON</small>
+                                            <span class="fw-bold">Google Play</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" id="appStoreBtn"
+                                        class="download-btn app-store-btn d-flex align-items-center justify-content-center py-3 rounded-3 text-decoration-none">
+                                        <i class="bi bi-apple fs-4 me-2"></i>
+                                        <div class="text-start">
+                                            <small class="d-block lh-1">Download on the</small>
+                                            <span class="fw-bold">App Store</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+        <div id="downloadToast" class="toast align-items-center text-white bg-dark border-0 rounded-pill shadow"
+            role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body py-2 px-4 text-center w-100">
+                    <i class="bi bi-cloud-download me-2"></i> Preparing your download...
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/main.js"></script>
 </body>
 

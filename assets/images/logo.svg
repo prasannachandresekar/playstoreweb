@@ -1,3 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#b8a4ff">
-<path d="M12 2L2 7l10 5 10-5-10-5zm0 7L2 4v13l10 5 10-5V4l-10 5z"></path>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="hubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8a4ff"></stop>
+      <stop offset="100%" stop-color="#8ecae6"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield Base -->
+  <path d="M60 10 
+           L100 28 
+           L92 85 
+           L60 105 
+           L28 85 
+           L20 28 
+           Z" fill="url(#hubGradient)"></path>
+
+  <!-- Inner App Grid -->
+  <rect x="42" y="40" width="12" height="12" rx="2" fill="white"></rect>
+  <rect x="66" y="40" width="12" height="12" rx="2" fill="white"></rect>
+  <rect x="42" y="64" width="12" height="12" rx="2" fill="white"></rect>
+  <rect x="66" y="64" width="12" height="12" rx="2" fill="white"></rect>
+
+  <!-- Connecting Hub Lines -->
+  <line x1="54" y1="46" x2="66" y2="46" stroke="white" stroke-width="2"></line>
+  <line x1="54" y1="70" x2="66" y2="70" stroke="white" stroke-width="2"></line>
+  <line x1="48" y1="52" x2="48" y2="64" stroke="white" stroke-width="2"></line>
+  <line x1="72" y1="52" x2="72" y2="64" stroke="white" stroke-width="2"></line>
+
 </svg>

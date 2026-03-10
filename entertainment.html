@@ -208,7 +208,10 @@
                                 <p class="text-muted small mb-1">Entertainment</p>
                                 <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</div>
                             </div>
-                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3 app-preview-btn"
+                                data-app="Streamify Plus"
+                                data-desc="Stream your favorite movies and TV shows in high definition with curated playlists."
+                                data-img="assets/images/ent6.jpg" data-play="#" data-ios="#">Get</button>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -221,7 +224,10 @@
                                 <p class="text-muted small mb-1">Role Playing</p>
                                 <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.7</div>
                             </div>
-                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3 app-preview-btn"
+                                data-app="RPG Adventure"
+                                data-desc="Embark on an epic role-playing journey with immersive worlds and complex characters."
+                                data-img="assets/images/ent7.jpg" data-play="#" data-ios="#">Get</button>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -234,7 +240,10 @@
                                 <p class="text-muted small mb-1">Social Networking</p>
                                 <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.5</div>
                             </div>
-                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3 app-preview-btn"
+                                data-app="Social Vibe"
+                                data-desc="Connect with friends and share your life moments in a vibrant social community."
+                                data-img="assets/images/ent8.jpg" data-play="#" data-ios="#">Get</button>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -247,7 +256,10 @@
                                 <p class="text-muted small mb-1">Mind Games</p>
                                 <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</div>
                             </div>
-                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3 app-preview-btn"
+                                data-app="Puzzle Cube"
+                                data-desc="Challenge your mind with intricate puzzles and brain-teasing levels."
+                                data-img="assets/images/ent9.jpg" data-play="#" data-ios="#">Get</button>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -260,7 +272,10 @@
                                 <p class="text-muted small mb-1">Music & Audio</p>
                                 <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.6</div>
                             </div>
-                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3 app-preview-btn"
+                                data-app="Beat Maker Studio"
+                                data-desc="Create professional-quality music and beats with intuitive production tools."
+                                data-img="assets/images/ent10.jpg" data-play="#" data-ios="#">Get</button>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -273,7 +288,10 @@
                                 <p class="text-muted small mb-1">Books & Comics</p>
                                 <div class="text-warning small"><i class="bi bi-star-fill"></i> 4.4</div>
                             </div>
-                            <button class="btn btn-primary btn-sm rounded-pill px-3">Get</button>
+                            <button class="btn btn-primary btn-sm rounded-pill px-3 app-preview-btn"
+                                data-app="Comics Reader"
+                                data-desc="Access a vast library of digital comics and graphic novels from top publishers."
+                                data-img="assets/images/ent11.jpg" data-play="#" data-ios="#">Get</button>
                         </div>
                     </div>
                 </div>
@@ -293,8 +311,11 @@
                             <p class="lead mb-4 opacity-75">Embark on an epic space adventure that pushes the boundaries
                                 of mobile gaming. Stunning graphics, gripping storyline, and multiplayer battles.</p>
                             <div class="d-flex align-items-center gap-3">
-                                <button class="btn btn-light btn-lg text-dark fw-bold px-4 rounded-pill hover-lift">Play
-                                    Now</button>
+                                <button
+                                    class="btn btn-light btn-lg text-dark fw-bold px-4 rounded-pill hover-lift app-preview-btn"
+                                    data-app="Nebula Explorers"
+                                    data-desc="Embark on an epic space adventure that pushes the boundaries of mobile gaming. Stunning graphics and gripping storyline."
+                                    data-img="assets/images/ent12.jpg" data-play="#" data-ios="#">Play Now</button>
                                 <button class="btn btn-outline-light btn-lg rounded-pill px-4 icon-btn"><i
                                         class="bi bi-play-fill"></i> Trailer</button>
                             </div>
@@ -445,6 +466,64 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- App Preview Modal -->
+    <div class="modal fade" id="appPreviewModal" tabindex="-1" aria-labelledby="appPreviewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 p-md-5 pt-0 pt-md-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-5 text-center">
+                            <img src="" id="modalAppImg" class="img-fluid rounded-4 shadow-sm mb-3 mb-md-0"
+                                alt="App Preview" style="max-height: 250px; width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="ps-md-3">
+                                <h2 class="fw-bold mb-2" id="modalAppName">App Name</h2>
+                                <p class="text-muted mb-4 lead" id="modalAppDesc">App description goes here.</p>
+
+                                <div class="d-grid gap-3">
+                                    <a href="#" id="playStoreBtn"
+                                        class="download-btn play-store-btn d-flex align-items-center justify-content-center py-3 rounded-3 text-decoration-none">
+                                        <i class="bi bi-play-fill fs-4 me-2"></i>
+                                        <div class="text-start">
+                                            <small class="d-block lh-1">GET IT ON</small>
+                                            <span class="fw-bold">Google Play</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" id="appStoreBtn"
+                                        class="download-btn app-store-btn d-flex align-items-center justify-content-center py-3 rounded-3 text-decoration-none">
+                                        <i class="bi bi-apple fs-4 me-2"></i>
+                                        <div class="text-start">
+                                            <small class="d-block lh-1">Download on the</small>
+                                            <span class="fw-bold">App Store</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+        <div id="downloadToast" class="toast align-items-center text-white bg-dark border-0 rounded-pill shadow"
+            role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body py-2 px-4 text-center w-100">
+                    <i class="bi bi-cloud-download me-2"></i> Preparing your download...
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/main.js"></script>
 </body>
 
