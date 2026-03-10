@@ -121,4 +121,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (appStoreBtn) appStoreBtn.addEventListener('click', handleDownload);
     if (detailedPlayBtn) detailedPlayBtn.addEventListener('click', handleDownload);
     if (detailedAppStoreBtn) detailedAppStoreBtn.addEventListener('click', handleDownload);
+
+    // Hide toast when modal closes
+    const hideToast = () => {
+        if (downloadToast) {
+            const toastInstance = bootstrap.Toast.getInstance(downloadToast);
+            if (toastInstance) {
+                toastInstance.hide();
+            }
+        }
+    };
+
+    if (appPreviewModal) appPreviewModal.addEventListener('hidden.bs.modal', hideToast);
+    if (appPreviewModalDetailed) appPreviewModalDetailed.addEventListener('hidden.bs.modal', hideToast);
 });
