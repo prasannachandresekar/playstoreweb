@@ -892,3 +892,33 @@ body.dark-mode .form-check-label {
         width: 36px !important;
     }
 }
+
+/* DETAILED MODAL STYLES (INDEX.HTML ONLY) */
+.detailed-modal-img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+body.dark-mode #appPreviewModalDetailed .modal-content {
+    background-color: var(--card-bg);
+}
+
+body.dark-mode #modalDetailedRating {
+    color: white !important;
+}
+
+body.dark-mode #appPreviewModalDetailed .btn-close {
+    background-color: transparent !important;
+    filter: invert(1);
+    box-shadow: none !important;
+}
+
+.download-btn-detailed {
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.download-btn-detailed:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

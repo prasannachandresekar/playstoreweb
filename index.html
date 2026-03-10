@@ -126,8 +126,9 @@
                         <p>Educational platform for students.</p>
 
                         <button class="install-btn app-preview-btn" data-app="Learning Pro"
-                            data-desc="Educational platform for students." data-img="assets/images/home1.jpg"
-                            data-play="#" data-ios="#">View App</button>
+                            data-desc="Educational platform for students with analytics and smart dashboards. Perfect for expanding your knowledge on the go."
+                            data-rating="4.8" data-category="Education" data-downloads="1M+ downloads"
+                            data-img="assets/images/home1.jpg" data-play="#" data-ios="#">View App</button>
 
                     </div>
                 </div>
@@ -141,8 +142,9 @@
                         <p>Stay updated with global news.</p>
 
                         <button class="install-btn app-preview-btn" data-app="News Pulse"
-                            data-desc="Stay updated with global news." data-img="assets/images/home2.jpg" data-play="#"
-                            data-ios="#">View App</button>
+                            data-desc="Stay updated with global news, personalized feeds, and breaking alerts."
+                            data-rating="4.6" data-category="News & Magazines" data-downloads="500K+ downloads"
+                            data-img="assets/images/home2.jpg" data-play="#" data-ios="#">View App</button>
 
                     </div>
                 </div>
@@ -156,8 +158,9 @@
                         <p>Fun entertainment gaming platform.</p>
 
                         <button class="install-btn app-preview-btn" data-app="GameZone"
-                            data-desc="Fun entertainment gaming platform." data-img="assets/images/home3.jpg"
-                            data-play="#" data-ios="#">View App</button>
+                            data-desc="Fun entertainment gaming platform featuring multiplayer battles and daily tournaments."
+                            data-rating="4.9" data-category="Entertainment" data-downloads="5M+ downloads"
+                            data-img="assets/images/home3.jpg" data-play="#" data-ios="#">View App</button>
 
                     </div>
                 </div>
@@ -224,8 +227,9 @@
                             <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.8</p>
                         </div>
                         <button class="install-btn app-preview-btn" data-app="Photo Editor Studio"
-                            data-desc="Professional photo editing tools for mobile." data-img="assets/images/home4.jpg"
-                            data-play="#" data-ios="#">View</button>
+                            data-desc="Professional photo editing tools for mobile. Enhance your photos with AI-powered filters and precision adjustments."
+                            data-rating="4.8" data-category="Photography" data-downloads="2M+ downloads"
+                            data-img="assets/images/home4.jpg" data-play="#" data-ios="#">View</button>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -237,8 +241,9 @@
                             <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.7</p>
                         </div>
                         <button class="install-btn app-preview-btn" data-app="Finance Tracker"
-                            data-desc="Manage your expenses and savings efficiently." data-img="assets/images/home5.jpg"
-                            data-play="#" data-ios="#">View</button>
+                            data-desc="Manage your expenses and savings efficiently with intuitive charts and budgeting tools."
+                            data-rating="4.7" data-category="Finance" data-downloads="1M+ downloads"
+                            data-img="assets/images/home5.jpg" data-play="#" data-ios="#">View</button>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -250,8 +255,9 @@
                             <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.9</p>
                         </div>
                         <button class="install-btn app-preview-btn" data-app="Fitness Coach"
-                            data-desc="Personalized workout plans and tracking." data-img="assets/images/home6.jpg"
-                            data-play="#" data-ios="#">View</button>
+                            data-desc="Personalized workout plans and tracking. Achieve your fitness goals with expert guidance and daily progress tracking."
+                            data-rating="4.9" data-category="Health & Fitness" data-downloads="10M+ downloads"
+                            data-img="assets/images/home6.jpg" data-play="#" data-ios="#">View</button>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -263,8 +269,9 @@
                             <p class="text-muted small mb-0"><i class="bi bi-star-fill text-warning"></i> 4.6</p>
                         </div>
                         <button class="install-btn app-preview-btn" data-app="Task Manager Pro"
-                            data-desc="Organize your daily tasks and projects." data-img="assets/images/home7.jpg"
-                            data-play="#" data-ios="#">View</button>
+                            data-desc="Organize your daily tasks and projects with seamless collaboration and deadline tracking."
+                            data-rating="4.6" data-category="Productivity" data-downloads="500K+ downloads"
+                            data-img="assets/images/home7.jpg" data-play="#" data-ios="#">View</button>
                     </div>
                 </div>
             </div>
@@ -441,6 +448,52 @@
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed App Preview Modal (Only for Index Page) -->
+    <div class="modal fade" id="appPreviewModalDetailed" tabindex="-1" aria-labelledby="detailedModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header border-0 pb-0 position-absolute w-100 z-3">
+                    <button type="button" class="btn-close bg-white rounded-circle p-2 shadow-sm m-2"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <!-- Large Top Image -->
+                    <img src="" id="modalDetailedImg" class="w-100 detailed-modal-img" alt="App Cover"
+                        style="height: 250px; object-fit: cover;">
+
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h3 class="fw-bold mb-0" id="modalDetailedName">App Name</h3>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3 text-muted small gap-3 flex-wrap">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-bold text-dark me-1" id="modalDetailedRating">4.5</span>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <span class="border-start ps-3" id="modalDetailedCategory">Category</span>
+                            <span class="border-start ps-3" id="modalDetailedDownloads">1M+ Downloads</span>
+                        </div>
+
+                        <p class="text-muted mb-4" id="modalDetailedDesc">App description goes here.</p>
+
+                        <div class="d-flex flex-column gap-2">
+                            <a href="#" id="detailedPlayBtn"
+                                class="btn btn-dark d-flex align-items-center justify-content-center py-2 rounded-pill download-btn-detailed">
+                                <i class="bi bi-play-fill fs-5 me-2"></i> GET IT ON GOOGLE PLAY
+                            </a>
+                            <a href="#" id="detailedAppStoreBtn"
+                                class="btn btn-dark d-flex align-items-center justify-content-center py-2 rounded-pill download-btn-detailed border-secondary border">
+                                <i class="bi bi-apple fs-5 me-2"></i> DOWNLOAD ON APP STORE
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -38,14 +38,25 @@ backToTop.addEventListener("click", () => {
 // APP PREVIEW MODAL LOGIC
 document.addEventListener("DOMContentLoaded", () => {
     const appPreviewModal = document.getElementById('appPreviewModal');
-    if (!appPreviewModal) return;
+    const appPreviewModalDetailed = document.getElementById('appPreviewModalDetailed');
+    const downloadToast = document.getElementById('downloadToast');
 
+    // Basic Modal Elements
     const modalAppImg = document.getElementById('modalAppImg');
     const modalAppName = document.getElementById('modalAppName');
     const modalAppDesc = document.getElementById('modalAppDesc');
     const playStoreBtn = document.getElementById('playStoreBtn');
     const appStoreBtn = document.getElementById('appStoreBtn');
-    const downloadToast = document.getElementById('downloadToast');
+
+    // Detailed Modal Elements
+    const modalDetailedImg = document.getElementById('modalDetailedImg');
+    const modalDetailedName = document.getElementById('modalDetailedName');
+    const modalDetailedRating = document.getElementById('modalDetailedRating');
+    const modalDetailedCategory = document.getElementById('modalDetailedCategory');
+    const modalDetailedDownloads = document.getElementById('modalDetailedDownloads');
+    const modalDetailedDesc = document.getElementById('modalDetailedDesc');
+    const detailedPlayBtn = document.getElementById('detailedPlayBtn');
+    const detailedAppStoreBtn = document.getElementById('detailedAppStoreBtn');
 
     // Populate and show modal when any ".app-preview-btn" is clicked (using event delegation)
     document.addEventListener('click', (e) => {
@@ -53,17 +64,33 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!button) return;
 
         const appData = button.dataset;
+        const currentPath = window.location.pathname;
+        const isIndexPage = currentPath.endsWith('index.html') || currentPath.endsWith('/') || currentPath === '';
 
-        // Set modal content
-        if (modalAppImg) modalAppImg.src = appData.img || '';
-        if (modalAppName) modalAppName.textContent = appData.app || 'App Name';
-        if (modalAppDesc) modalAppDesc.textContent = appData.desc || '';
-        if (playStoreBtn) playStoreBtn.href = appData.play || '#';
-        if (appStoreBtn) appStoreBtn.href = appData.ios || '#';
+        if (isIndexPage && appPreviewModalDetailed) {
+            // Populate detailed modal
+            if (modalDetailedImg) modalDetailedImg.src = appData.img || '';
+            if (modalDetailedName) modalDetailedName.textContent = appData.app || 'App Name';
+            if (modalDetailedRating) modalDetailedRating.textContent = appData.rating || '4.5';
+            if (modalDetailedCategory) modalDetailedCategory.textContent = appData.category || 'App';
+            if (modalDetailedDownloads) modalDetailedDownloads.textContent = appData.downloads || '1M+';
+            if (modalDetailedDesc) modalDetailedDesc.textContent = appData.desc || '';
+            if (detailedPlayBtn) detailedPlayBtn.href = appData.play || '#';
+            if (detailedAppStoreBtn) detailedAppStoreBtn.href = appData.ios || '#';
 
-        // Show Bootstrap Modal
-        const modal = new bootstrap.Modal(appPreviewModal);
-        modal.show();
+            const modal = new bootstrap.Modal(appPreviewModalDetailed);
+            modal.show();
+        } else if (appPreviewModal) {
+            // Populate basic modal
+            if (modalAppImg) modalAppImg.src = appData.img || '';
+            if (modalAppName) modalAppName.textContent = appData.app || 'App Name';
+            if (modalAppDesc) modalAppDesc.textContent = appData.desc || '';
+            if (playStoreBtn) playStoreBtn.href = appData.play || '#';
+            if (appStoreBtn) appStoreBtn.href = appData.ios || '#';
+
+            const modal = new bootstrap.Modal(appPreviewModal);
+            modal.show();
+        }
     });
 
     // Handle download button clicks with toast feedback
@@ -92,4 +119,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (playStoreBtn) playStoreBtn.addEventListener('click', handleDownload);
     if (appStoreBtn) appStoreBtn.addEventListener('click', handleDownload);
+    if (detailedPlayBtn) detailedPlayBtn.addEventListener('click', handleDownload);
+    if (detailedAppStoreBtn) detailedAppStoreBtn.addEventListener('click', handleDownload);
 });
