@@ -87,6 +87,22 @@ body {
 
 .nav-link {
     font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 16px !important;
+    border-radius: 8px;
+    margin: 0 4px;
+}
+
+.nav-link:hover, .nav-link.active,
+.dropdown-item:hover, .dropdown-item.active {
+    color: var(--primary) !important;
+    background: rgba(184, 164, 255, 0.1);
+}
+
+body.dark-mode .nav-link:hover, body.dark-mode .nav-link.active,
+body.dark-mode .dropdown-item.active {
+    background: rgba(184, 164, 255, 0.15);
+    color: var(--primary) !important;
 }
 
 /* NAV ACTIONS */
@@ -101,6 +117,12 @@ body {
     background: none;
     border: none;
     font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-btn:hover {
+    color: var(--primary);
+    transform: scale(1.1);
 }
 
 .login-btn {
@@ -109,6 +131,13 @@ body {
     padding: 6px 14px;
     border-radius: 8px;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #a38dff;
+    transform: translateY(-2px);
+    color: white;
 }
 
 /* HERO */
@@ -123,6 +152,14 @@ body {
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: #9d83ff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(184, 164, 255, 0.4);
+    color: white;
 }
 
 /* APPS */
@@ -133,6 +170,7 @@ body {
 
 .section-title {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .app-card {
@@ -141,6 +179,12 @@ body {
     border-radius: 14px;
     border: 1px solid var(--border-color);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .app-img {
@@ -157,6 +201,12 @@ body {
     border: none;
     padding: 8px 14px;
     border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.install-btn:hover {
+    background: #8fd5ff;
+    transform: translateY(-2px);
 }
 
 /* CATEGORIES */
@@ -169,6 +219,38 @@ body {
 .category-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* PLATFORM STATS */
+
+.platform-stats {
+    padding: 60px 0;
+}
+
+.stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px 10px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0.8;
 }
 
 /* ANIMATIONS & HOME 2 UTILITIES */
@@ -228,45 +310,6 @@ body {
 .hover-lift:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-}
-
-.horizontal-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 10px;
-    scroll-behavior: smooth;
-}
-
-.horizontal-scroll::-webkit-scrollbar {
-    display: none;
-}
-
-.horizontal-scroll .card {
-    min-width: 260px;
-    flex: 0 0 auto;
-}
-
-.horizontal-scroll .card {
-    height: 100%;
-}
-
-.horizontal-scroll .card-body {
-    min-height: 95px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.horizontal-scroll .card h5 {
-    font-size: 1rem;
-    line-height: 1.2;
-}
-
-.horizontal-scroll .card-img-top {
-    height: 160px;
-    object-fit: cover;
 }
 
 .trend-card {
@@ -399,6 +442,32 @@ body.dark-mode .gradient-bg {
     color: var(--primary);
 }
 
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    color: white;
+}
+
 .newsletter-input {
     width: 100%;
     padding: 8px;
@@ -413,6 +482,13 @@ body.dark-mode .gradient-bg {
     padding: 8px 12px;
     border-radius: 6px;
     color: white;
+    transition: all 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background: #9c8cff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer-bottom {
@@ -778,12 +854,7 @@ body.dark-mode .auth-glass {
 
 }
 
-.horizontal-scroll {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
-    justify-items: center;
-}
+
 
 /* APP PREVIEW MODAL */
 .modal-content {
