@@ -873,7 +873,7 @@ body.dark-mode .auth-glass {
 @media(max-width:768px) {
 
     .mobile-nav {
-        display: flex;
+        display: none !important;
     }
 
     .navbar {
