@@ -92,9 +92,9 @@
     <main>
 
         <!-- SECTION 1 – HERO EXPERIENCE -->
-        <section class="hero-section position-relative overflow-hidden"
+        <section class="hero-section position-relative"
             style="background: linear-gradient(to bottom right, rgba(184, 164, 255, 0.15), rgba(167, 227, 255, 0.15)); padding: 120px 0;">
-            <div class="container text-center position-relative z-1 fade-in-up">
+            <div class="container position-relative z-1 fade-in-up">
                 <div class="floating-element position-absolute top-0 start-0 translate-middle" style="z-index: -1;">
                     <i class="bi bi-controller fs-1 text-primary opacity-50"></i>
                 </div>
@@ -107,17 +107,27 @@
                     <i class="bi bi-mic fs-2 text-danger opacity-50"></i>
                 </div>
 
-                <h1 class="display-3 fw-bold mb-4" style="letter-spacing: -1px;">Supercharge Your Digital Life</h1>
-                <p class="lead mb-5 mx-auto" style="max-width: 600px;">
-                    Discover, download, and experience the most innovative applications designed to amplify your daily
-                    productivity and entertainment.
-                </p>
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-3 fw-bold mb-4" style="letter-spacing: -1px;">Supercharge Your Digital Life
+                        </h1>
+                        <p class="lead mb-5">
+                            Discover, download, and experience the most innovative applications designed to amplify your
+                            daily
+                            productivity and entertainment.
+                        </p>
 
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="#" class="btn primary-btn px-4 py-2 hover-lift ms-0">Explore Apps</a>
-                    <a href="#"
-                        class="btn btn-outline-secondary px-4 py-2 hover-lift text-decoration-none shadow-sm bg-body"
-                        style="border-radius: 10px; color: var(--text-color);">Browse Categories</a>
+                        <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                            <a href="#" class="btn primary-btn px-4 py-2 hover-lift ms-0">Explore Apps</a>
+                            <a href="#"
+                                class="btn btn-outline-secondary px-4 py-2 hover-lift text-decoration-none shadow-sm bg-body"
+                                style="border-radius:10px; color:#000;">Browse Categories</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="assets/images/home_21.jpg" class="img-fluid rounded-4 shadow-sm"
+                            alt="Hero Illustration">
+                    </div>
                 </div>
             </div>
         </section>
@@ -177,8 +187,8 @@
                             class="bi bi-arrow-right"></i></a>
                 </div>
 
-                <div class="row g-4 text-center">
-                    <div class="col-md-3 col-6">
+                <div class="row g-3 text-center">
+                    <div class="col-6 col-md-3">
                         <div class="app-card hover-lift h-100 p-4 border-0 shadow-sm category-card">
                             <div class="icon-circle mb-3 mx-auto d-flex align-items-center justify-content-center"
                                 style="width: 70px; height: 70px; background: rgba(184, 164, 255, 0.1); border-radius: 50%;">
@@ -188,7 +198,7 @@
                             <p class="text-muted small mb-0">120+ Apps</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-6 col-md-3">
                         <div class="app-card hover-lift h-100 p-4 border-0 shadow-sm category-card">
                             <div class="icon-circle mb-3 mx-auto d-flex align-items-center justify-content-center"
                                 style="width: 70px; height: 70px; background: rgba(167, 227, 255, 0.1); border-radius: 50%;">
@@ -198,7 +208,7 @@
                             <p class="text-muted small mb-0">85+ Apps</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-6 col-md-3">
                         <div class="app-card hover-lift h-100 p-4 border-0 shadow-sm category-card">
                             <div class="icon-circle mb-3 mx-auto d-flex align-items-center justify-content-center"
                                 style="width: 70px; height: 70px; background: rgba(255, 184, 164, 0.1); border-radius: 50%;">
@@ -208,7 +218,7 @@
                             <p class="text-muted small mb-0">210+ Apps</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-6 col-md-3">
                         <div class="app-card hover-lift h-100 p-4 border-0 shadow-sm category-card">
                             <div class="icon-circle mb-3 mx-auto d-flex align-items-center justify-content-center"
                                 style="width: 70px; height: 70px; background: rgba(198, 247, 226, 0.1); border-radius: 50%;">
@@ -226,61 +236,71 @@
         <section class="apps-section py-5">
             <div class="container">
                 <h2 class="section-title mb-4">Top Trending Now</h2>
-                <div class="horizontal-scroll px-1">
+                <div class="row g-4">
                     <!-- App 1 -->
-                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
-                        <img src="assets/images/home_22.jpg" class="w-100 rounded-3 mb-3"
-                            style="height: 120px; object-fit: cover; object-position: 50% 20%;">
-                        <h6 class="fw-bold mb-1 text-truncate">Astro Planner</h6>
-                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.9 <span
-                                class="ms-2">Productivity</span></p>
-                        <button class="install-btn w-100 app-preview-btn" data-app="Astro Planner"
-                            data-desc="Plan your life and tasks with celestial precision and productivity tools."
-                            data-img="assets/images/home_22.jpg" data-play="#" data-ios="#">Get App</button>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
+                            <img src="assets/images/home_22.jpg" class="w-100 rounded-3 mb-3"
+                                style="height: 120px; object-fit: cover; object-position: 50% 20%;">
+                            <h6 class="fw-bold mb-1 text-truncate">Astro Planner</h6>
+                            <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.9 <span
+                                    class="ms-2">Productivity</span></p>
+                            <button class="install-btn w-100 app-preview-btn" data-app="Astro Planner"
+                                data-desc="Plan your life and tasks with celestial precision and productivity tools."
+                                data-img="assets/images/home_22.jpg" data-play="#" data-ios="#">Get App</button>
+                        </div>
                     </div>
                     <!-- App 2 -->
-                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
-                        <img src="assets/images/home_23.jpg" class="w-100 rounded-3 mb-3"
-                            style="height: 120px; object-fit: cover; object-position: 50% 20%;">
-                        <h6 class="fw-bold mb-1 text-truncate">Foodie Delight</h6>
-                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.7 <span
-                                class="ms-2">Lifestyle</span></p>
-                        <button class="install-btn w-100 app-preview-btn" data-app="Foodie Delight"
-                            data-desc="Discover and share the best recipes and restaurant reviews globally."
-                            data-img="assets/images/home_23.jpg" data-play="#" data-ios="#">Get App</button>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
+                            <img src="assets/images/home_23.jpg" class="w-100 rounded-3 mb-3"
+                                style="height: 120px; object-fit: cover; object-position: 50% 20%;">
+                            <h6 class="fw-bold mb-1 text-truncate">Foodie Delight</h6>
+                            <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.7 <span
+                                    class="ms-2">Lifestyle</span></p>
+                            <button class="install-btn w-100 app-preview-btn" data-app="Foodie Delight"
+                                data-desc="Discover and share the best recipes and restaurant reviews globally."
+                                data-img="assets/images/home_23.jpg" data-play="#" data-ios="#">Get App</button>
+                        </div>
                     </div>
                     <!-- App 3 -->
-                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
-                        <img src="assets/images/home_24.jpg" class="w-100 rounded-3 mb-3"
-                            style="height: 120px; object-fit: cover; object-position: 50% 20%;">
-                        <h6 class="fw-bold mb-1 text-truncate">Code Master</h6>
-                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.8 <span
-                                class="ms-2">Education</span></p>
-                        <button class="install-btn w-100 app-preview-btn" data-app="Code Master"
-                            data-desc="Master coding through interactive challenges and real-world projects."
-                            data-img="assets/images/home_24.jpg" data-play="#" data-ios="#">Get App</button>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
+                            <img src="assets/images/home_24.jpg" class="w-100 rounded-3 mb-3"
+                                style="height: 120px; object-fit: cover; object-position: 50% 20%;">
+                            <h6 class="fw-bold mb-1 text-truncate">Code Master</h6>
+                            <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.8 <span
+                                    class="ms-2">Education</span></p>
+                            <button class="install-btn w-100 app-preview-btn" data-app="Code Master"
+                                data-desc="Master coding through interactive challenges and real-world projects."
+                                data-img="assets/images/home_24.jpg" data-play="#" data-ios="#">Get App</button>
+                        </div>
                     </div>
                     <!-- App 4 -->
-                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
-                        <img src="assets/images/home_25.jpg" class="w-100 rounded-3 mb-3"
-                            style="height: 120px; object-fit: cover; object-position: 50% 20%;">
-                        <h6 class="fw-bold mb-1 text-truncate">Mind Relax</h6>
-                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.6 <span
-                                class="ms-2">Health</span></p>
-                        <button class="install-btn w-100 app-preview-btn" data-app="Mind Relax"
-                            data-desc="Find your inner peace with meditation, breathing exercises, and ambient sounds."
-                            data-img="assets/images/home_25.jpg" data-play="#" data-ios="#">Get App</button>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
+                            <img src="assets/images/home_25.jpg" class="w-100 rounded-3 mb-3"
+                                style="height: 120px; object-fit: cover; object-position: 50% 20%;">
+                            <h6 class="fw-bold mb-1 text-truncate">Mind Relax</h6>
+                            <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.6 <span
+                                    class="ms-2">Health</span></p>
+                            <button class="install-btn w-100 app-preview-btn" data-app="Mind Relax"
+                                data-desc="Find your inner peace with meditation, breathing exercises, and ambient sounds."
+                                data-img="assets/images/home_25.jpg" data-play="#" data-ios="#">Get App</button>
+                        </div>
                     </div>
                     <!-- App 5 -->
-                    <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
-                        <img src="assets/images/home_26.jpg" class="w-100 rounded-3 mb-3"
-                            style="height: 120px; object-fit: cover; object-position: 50% 20%;">
-                        <h6 class="fw-bold mb-1 text-truncate">Pixel Quest</h6>
-                        <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.9 <span
-                                class="ms-2">Games</span></p>
-                        <button class="install-btn w-100 app-preview-btn" data-app="Pixel Quest"
-                            data-desc="Embark on an epic 8-bit adventure through mysterious pixelated worlds."
-                            data-img="assets/images/home_26.jpg" data-play="#" data-ios="#">Get App</button>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="app-card trend-card hover-lift border-0 shadow-sm text-start p-3">
+                            <img src="assets/images/home_26.jpg" class="w-100 rounded-3 mb-3"
+                                style="height: 120px; object-fit: cover; object-position: 50% 20%;">
+                            <h6 class="fw-bold mb-1 text-truncate">Pixel Quest</h6>
+                            <p class="text-muted small mb-3"><i class="bi bi-star-fill text-warning"></i> 4.9 <span
+                                    class="ms-2">Games</span></p>
+                            <button class="install-btn w-100 app-preview-btn" data-app="Pixel Quest"
+                                data-desc="Embark on an epic 8-bit adventure through mysterious pixelated worlds."
+                                data-img="assets/images/home_26.jpg" data-play="#" data-ios="#">Get App</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -305,7 +325,7 @@
                             <div class="floating-element d-inline-block mb-3" style="animation-delay: 1s;">
                                 <i class="bi bi-lightning-charge-fill text-info" style="font-size: 3rem;"></i>
                             </div>
-                            <h4 class="fw-bold">Fast Discovery</h4>
+                            <h4 class="fw-bold">Discovery</h4>
                             <p class="text-muted">Intelligent search and recommendation algorithms find what you need in
                                 under a second.</p>
                         </div>
