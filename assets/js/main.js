@@ -20,21 +20,25 @@ if (toggle) {
 }
 const backToTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        backToTop.classList.add("show");
-    } else {
-        backToTop.classList.remove("show");
-    }
-});
+if (backToTop) {
 
-backToTop.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
     });
-});
 
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    });
+
+}
 // APP PREVIEW MODAL LOGIC
 document.addEventListener("DOMContentLoaded", () => {
     const appPreviewModal = document.getElementById('appPreviewModal');

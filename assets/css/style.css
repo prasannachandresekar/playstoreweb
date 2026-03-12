@@ -157,11 +157,9 @@ body.dark-mode .dropdown-item.active {
     overflow: hidden;
 
     /* hero background */
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.85),
-        rgba(255, 255, 255, 0.85)
-    ),
-    url("../images/home-hero-bg.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85),
+            rgba(255, 255, 255, 0.85)),
+        url("../images/home-hero-bg.jpg");
 
     background-size: cover;
     background-position: center;
@@ -169,11 +167,9 @@ body.dark-mode .dropdown-item.active {
 }
 
 body.dark-mode .hero-section {
-    background-image: linear-gradient(
-        rgba(15, 23, 42, 0.8),
-        rgba(15, 23, 42, 0.8)
-    ),
-    url("../images/home-hero-bg.jpg");
+    background-image: linear-gradient(rgba(15, 23, 42, 0.8),
+            rgba(15, 23, 42, 0.8)),
+        url("../images/home-hero-bg.jpg");
 }
 
 .primary-btn {
@@ -1112,41 +1108,41 @@ body.dark-mode .hero-section p.text-muted {
 /* DARK MODE CARD BACKGROUNDS */
 body.dark-mode .tool-card,
 body.dark-mode .utility-card,
-body.dark-mode .collection-card{
+body.dark-mode .collection-card {
     background: #0f1c34;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* DARK MODE HEADINGS */
 body.dark-mode .tool-card h4,
 body.dark-mode .tool-card h5,
 body.dark-mode .collection-card h5,
-body.dark-mode .utility-card h5{
+body.dark-mode .utility-card h5 {
     color: #ffffff;
 }
 
 /* DARK MODE PARAGRAPH TEXT */
 body.dark-mode .tool-card p,
 body.dark-mode .collection-card p,
-body.dark-mode .utility-card p{
+body.dark-mode .utility-card p {
     color: #cbd5e1 !important;
 }
 
 /* DARK MODE ICON CIRCLES */
-body.dark-mode .collection-card .icon-circle{
-    background: rgba(255,255,255,0.06);
+body.dark-mode .collection-card .icon-circle {
+    background: rgba(255, 255, 255, 0.06);
 }
 
 /* DARK MODE FEATURE ROW (Virus Free / Fast Downloads / Updates) */
-body.dark-mode .features-row{
+body.dark-mode .features-row {
     background: #0b162d;
 }
 
-body.dark-mode .features-row h6{
+body.dark-mode .features-row h6 {
     color: #ffffff;
 }
 
-body.dark-mode .features-row p{
+body.dark-mode .features-row p {
     color: #94a3b8;
 }
 
@@ -1176,76 +1172,112 @@ body.dark-mode .features-row p{
 }
 
 /* App Categories alignment fix */
-.category-row{
-    justify-content:center;
+.category-row {
+    justify-content: center;
 }
 
 /* Category cards alignment fix */
-.category-card{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    height:100%;
-    min-height:140px; /* Keep the min-height from previous design */
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    min-height: 140px;
+    /* Keep the min-height from previous design */
 }
 
-.category-card h6, .category-card h5 {
-    margin-top:6px;
-    margin-bottom:2px;
+.category-card h6,
+.category-card h5 {
+    margin-top: 6px;
+    margin-bottom: 2px;
 }
 
-.category-card p{
-    margin-bottom:0;
-    font-size:13px;
+.category-card p {
+    margin-bottom: 0;
+    font-size: 13px;
 }
 
 /* Tablet and mobile alignment */
-@media (max-width:768px){
-    .category-row .col-6{
-        display:flex;
+@media (max-width:768px) {
+    .category-row .col-6 {
+        display: flex;
     }
 
-    .category-card{
-        width:100%;
+    .category-card {
+        width: 100%;
     }
 }
 
 /* Fix hero overlap on mobile */
-@media (max-width:768px){
-    .hero-section{
+@media (max-width:768px) {
+    .hero-section {
         min-height: auto;
         padding-top: 90px !important;
         padding-bottom: 50px !important;
         display: block;
     }
 
-    .hero-section .floating-element{
+    .hero-section .floating-element {
         display: none;
     }
 
-    .hero-section .row{
+    .hero-section .row {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero-section img{
+    .hero-section img {
         max-width: 100%;
         height: auto;
     }
 }
 
 /* Trending Apps Grid Fix */
-.trend-card img{
-    height:140px;
-    object-fit:cover;
-    border-radius:12px;
+.trend-card img {
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-.trend-card{
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
+.trend-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.apps-section .col-md-4 {
+    display: flex;
+}
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.horizontal-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width:768px) {
+
+    .horizontal-scroll {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        overflow: visible;
+    }
+
+    .horizontal-scroll .app-card {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+
 }
